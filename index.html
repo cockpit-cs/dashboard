@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!-- saved from url=(0217)file:///Users/cami/Library/Application%20Support/Claude/local-agent-mode-sessions/c23b22eb-a1ff-4e7a-8240-407d8bb0a772/2f999506-caea-4351-bbee-a345a016b015/local_b2fdc630-9ed0-43fe-a198-f39ab07207c4/outputs/index.html -->
-<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cortex CS · Cockpit · Maio 2026 · v3</title>
 <style>
@@ -246,7 +246,7 @@ body.editing [contenteditable="true"]:focus { background: #fff; outline-style: s
       <div class="tb-logo">CX</div>
       <div class="tb-brand-text">
         <div class="tb-eyebrow">Cortex · Customer Success</div>
-        <h1 data-eid="e_78ayon">Cockpit · Mai/26</h1>
+        <h1>Cockpit · Mai/26</h1>
       </div>
     </div>
     <div class="tb-filters">
@@ -268,7 +268,7 @@ body.editing [contenteditable="true"]:focus { background: #fff; outline-style: s
     </div>
     <div class="tb-actions">
       <button class="btn" id="btn-edit">✎ Editar</button>
-      <button class="btn btn-danger" id="btn-reset" style="display: inline-block;">↺ Resetar</button>
+      <button class="btn btn-danger" id="btn-reset" style="display:none">↺ Resetar</button>
     </div>
   </div>
 </div>
@@ -293,11 +293,11 @@ body.editing [contenteditable="true"]:focus { background: #fff; outline-style: s
   <div class="sb-live" id="live">
     <div class="sb-live-h"><span class="sb-live-dot"></span>Visão atual</div>
     <div class="sb-live-name" id="live-name">Enterprise</div>
-    <div class="sb-live-data" id="live-data">20 contas · MRR <strong>R$ 503K</strong> · risco <strong>R$ 121K</strong> · nota <strong>8,49</strong></div>
+    <div class="sb-live-data" id="live-data"></div>
   </div>
 
-  <div class="sb-foot" data-eid="e_iqieuj">
-    <strong>Camila Fontanella</strong><br>Performance &amp; Enablement<br><br>
+  <div class="sb-foot">
+    <strong>Camila Fontanella</strong><br>Performance & Enablement<br><br>
     <strong>Análises completas:</strong><br>
     <a href="https://camilafontanellacortex.github.io/auditoriameetrox/" target="_blank" style="color:var(--purple);text-decoration:none;font-weight:600">🎙 Auditoria Meetrox</a><br>
     <a href="https://camilafontanellacortex.github.io/auditoriavitally/" target="_blank" style="color:var(--purple);text-decoration:none;font-weight:600">📊 Analista de Carteira Vitally</a><br><br>
@@ -311,9 +311,9 @@ body.editing [contenteditable="true"]:focus { background: #fff; outline-style: s
 <main class="content">
 
 <div class="c-head">
-  <div class="c-eyebrow" id="c-eyebrow" data-eid="e_dntuf3">Enterprise · Customer Success</div>
-  <h1 class="c-title" id="c-title" data-eid="e_fk59c9">Cockpit CS · Maio 2026</h1>
-  <div class="c-sub" id="c-sub" data-eid="e_orgigm">20 contas Ongoing · 3 CSMs (Bruna · Samara · Guilherme) · dados oficiais Vitally + Meetrox</div>
+  <div class="c-eyebrow" id="c-eyebrow">Enterprise · Customer Success</div>
+  <h1 class="c-title" id="c-title">Cockpit CS · Maio 2026</h1>
+  <div class="c-sub" id="c-sub">20 contas Ongoing · 3 CSMs · dados oficiais Vitally + Meetrox</div>
 </div>
 
 <!-- ============================================================
@@ -325,7 +325,7 @@ body.editing [contenteditable="true"]:focus { background: #fff; outline-style: s
     <div class="como-ler-h">📖 Como ler este painel</div>
     <div class="como-ler-text">
       <strong>Execução</strong> mede o quanto a operação CS está acontecendo do jeito que deveria. 3 perguntas-guia:<br>
-      <strong>① Volume:</strong> quantas calls e tasks foram executadas na base Ongoing — cobertura cliente, taxa de tasks Vitally, % de invisíveis. <strong>② Régua × Executado:</strong> para cada milestone (SE, SP, QBR, Recor, QA) compara o que <em>deveria</em> ter rodado vs o que rodou. <strong>③ Por CS:</strong> ranking individual de atingimento vs meta + fotografia da semana.
+      <strong>① Volume:</strong> quantas calls e tasks foram executadas na base Ongoing — cobertura jornada, taxa de tasks Vitally. <strong>② Régua × Executado:</strong> para cada milestone (SE, SP, QBR, Recor, QA) compara o que <em>deveria</em> ter rodado vs o que rodou. <strong>③ Por CS:</strong> ranking individual de atingimento vs meta + fotografia da semana.
     </div>
   </div>
 
@@ -333,36 +333,26 @@ body.editing [contenteditable="true"]:focus { background: #fff; outline-style: s
     <div class="s-h">
       <div class="s-num">01</div>
       <div class="s-titles">
-        <div class="s-title" id="exec-01-title" data-eid="e_2gzf1b">A esteira atingiu o volume de calls necessário para cobrir a base Ent em maio?</div>
-        <div class="s-desc" id="exec-01-desc" data-eid="e_rz5nte">Calls Meetrox + tasks Vitally vs 20 contas Ongoing — quantas contas foram efetivamente tocadas.</div>
+        <div class="s-title" id="exec-01-title">A esteira atingiu o volume de calls necessário para cobrir a base em maio?</div>
+        <div class="s-desc" id="exec-01-desc">Calls registradas no Meetrox e tasks executadas no Vitally vs base Ongoing — quantas contas foram efetivamente tocadas no mês.</div>
       </div>
     </div>
     <div class="s-body">
-      <div class="kpi-row" id="exec-01-kpis"><div class="kpi"><div class="kpi-l" data-eid="e_jg4uq1">Cobertura cliente</div><div class="kpi-v amber">70%</div><div class="kpi-s" data-eid="e_5k6c7m">16/23 contas com task em mai · 7 invisíveis</div><div class="kpi-bar"><div style="width:70%;background:var(--amber)"></div></div></div><div class="kpi"><div class="kpi-l" data-eid="e_h5yarh">Tasks Vitally</div><div class="kpi-v teal">83%</div><div class="kpi-s" data-eid="e_cpgec4">45/54 realizadas</div><div class="kpi-bar"><div style="width:83%;background:var(--teal)"></div></div></div><div class="kpi"><div class="kpi-l" data-eid="e_xs3rzg">QBR/Recor cobertura</div><div class="kpi-v red">0%</div><div class="kpi-s" data-eid="e_958xu8">0/3 QBR Ent previstas Vitally executadas · 11 Recor MeetRox</div><div class="kpi-bar"><div style="width:0%;background:var(--maroon)"></div></div></div><div class="kpi"><div class="kpi-l" data-eid="e_wrcgnp">Calls Meetrox link</div><div class="kpi-v amber">26%</div><div class="kpi-s" data-eid="e_iqq9q">6/23 contas registradas</div><div class="kpi-bar"><div style="width:26%;background:var(--amber)"></div></div></div><div class="kpi"><div class="kpi-l" data-eid="e_ucmxox">Invisíveis</div><div class="kpi-v red">30%</div><div class="kpi-s" data-eid="e_yope79">7/23 sem task em mai · Bruna concentra 6 de 7 (86%)</div></div><div class="kpi"><div class="kpi-l" data-eid="e_kvfzqy">Nota Meetrox</div><div class="kpi-v teal">8,49</div><div class="kpi-s" data-eid="e_r1tghb">21 calls elegíveis · meta 8,0 ✓</div></div><div class="kpi"><div class="kpi-l" data-eid="e_rw59j0">% calls &lt;6</div><div class="kpi-v amber">14%</div><div class="kpi-s" data-eid="e_b9lv2j">3/21 calls críticas</div></div><div class="kpi"><div class="kpi-l" data-eid="e_wir7gu">No-Show / curtas</div><div class="kpi-v red">14%</div><div class="kpi-s" data-eid="e_p0lnoi">3 calls ≤5min ou ausência</div></div></div>
-      <div class="acao teal" id="exec-01-acao"><div class="acao-h">▶ Ação recomendada · próxima semana</div><div class="acao-text" data-eid="e_q6tr6h"><strong>Foco em Bruna · 6 de 7 contas Ent invisíveis em mai/26 (86%)</strong>. SAP BRASIL LTDA · DESKTOP · BUNZL LATAM (3 SP zeradas) · BUNZL Proteção · BUNZL Hospitalia · CPQD. Gui: 1 invisível (Valecard). Samara: 0. Plano P0: abrir task ou call em cada uma até 10/06.</div></div>
+      <div class="kpi-row" id="exec-01-kpis"></div>
+      <div class="acao" id="exec-01-acao"></div>
 
       <div style="background:var(--gray-50);border:1px solid var(--border);border-radius:9px;padding:14px 18px;margin-top:14px">
-        <div style="font-size:11px;font-weight:700;color:var(--purple);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px">📊 Highlight Vitally · cobertura cliente · mai/26</div>
-        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;font-size:11px">
-          <div style="text-align:center;padding:10px;background:var(--purple-bg);border-radius:7px">
-            <div style="font-size:20px;font-weight:700;color:var(--purple)" id="vit-task">70%</div>
-            <div style="color:var(--gray-700);font-weight:600">Task Realizada</div>
-            <div style="color:var(--gray-500)" id="vit-task-sub">16/23</div>
-          </div>
+        <div style="font-size:11px;font-weight:700;color:var(--purple);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px">📊 Highlight Vitally × Meetrox · cobertura cruzada · mai/26</div>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;font-size:11px">
           <div style="text-align:center;padding:10px;background:var(--teal-bg);border-radius:7px">
-            <div style="font-size:20px;font-weight:700;color:var(--teal)" id="vit-meetrox">26%</div>
-            <div style="color:var(--gray-700);font-weight:600">Call Meetrox</div>
-            <div style="color:var(--gray-500)" id="vit-meetrox-sub">6/23</div>
+            <div style="font-size:20px;font-weight:700;color:var(--teal)" id="vit-meetrox">—</div>
+            <div style="color:var(--gray-700);font-weight:600">Cobertura Meetrox</div>
+            <div style="color:var(--gray-500)" id="vit-meetrox-sub">—</div>
           </div>
           <div style="text-align:center;padding:10px;background:var(--amber-bg);border-radius:7px">
-            <div style="font-size:20px;font-weight:700;color:var(--amber)" id="vit-tm">22%</div>
-            <div style="color:var(--gray-700);font-weight:600">Task + Meetrox</div>
-            <div style="color:var(--gray-500)" id="vit-tm-sub">5/23</div>
-          </div>
-          <div style="text-align:center;padding:10px;background:var(--maroon-bg);border-radius:7px">
-            <div style="font-size:20px;font-weight:700;color:var(--maroon)" id="vit-inv">30%</div>
-            <div style="color:var(--gray-700);font-weight:600">Sem task nem call</div>
-            <div style="color:var(--gray-500)" id="vit-inv-sub">7/23 invisíveis</div>
+            <div style="font-size:20px;font-weight:700;color:var(--amber)" id="vit-tm">—</div>
+            <div style="color:var(--gray-700);font-weight:600">Task + Meetrox (matching)</div>
+            <div style="color:var(--gray-500)" id="vit-tm-sub">—</div>
           </div>
         </div>
         <div style="font-size:11px;color:var(--gray-500);margin-top:10px;text-align:right">Fonte: <a href="https://camilafontanellacortex.github.io/auditoriavitally/" target="_blank" style="color:var(--purple);font-weight:600">Analista de Carteira Vitally</a></div>
@@ -374,33 +364,13 @@ body.editing [contenteditable="true"]:focus { background: #fff; outline-style: s
     <div class="s-h">
       <div class="s-num">02</div>
       <div class="s-titles">
-        <div class="s-title" data-eid="e_87cey7">Cada milestone da régua foi executado conforme o playbook?</div>
-        <div class="s-desc" data-eid="e_uwtuy9">Régua planejada × executado por milestone (SE · SP · QBR · Recorrência · QA). Para cada tipo, comparamos quantas calls deveriam ter rodado vs quantas rodaram em mai/26.</div>
+        <div class="s-title">Cada milestone da régua foi executado conforme o playbook?</div>
+        <div class="s-desc">Régua planejada × executado por milestone (SE · SP · QBR · Recorrência · QA). Para cada tipo, comparamos quantas calls deveriam ter rodado vs quantas rodaram em mai/26.</div>
       </div>
     </div>
     <div class="s-body">
-      <div class="rank" id="exec-02-regua"><div class="rank-h" data-eid="e_qpw8ld">Régua × executado por milestone<span class="rank-h-sub">mai/26 · ✓ Vitally task config REAL · 100% Growth (142/142) · só estágios ongoing</span></div><div class="rank-row">
-          <div class="rank-row-name">SE · Sales Engagement</div>
-          <div class="rank-row-bar" style="position:relative"><div class="rank-row-fill" style="width:90%;background:var(--teal)">19 de 21</div></div>
-          <div class="rank-row-v">90%</div>
-        </div><div style="font-size:10px;color:var(--gray-500);margin-left:130px;margin-top:-3px;margin-bottom:8px;font-style:italic">✓ Vitally task config (100% Growth Ent · 23/23) · 90% execução · saudável</div><div class="rank-row">
-          <div class="rank-row-name">SP · Sales Performance</div>
-          <div class="rank-row-bar" style="position:relative"><div class="rank-row-fill" style="width:43%;background:var(--maroon)">3 de 7</div></div>
-          <div class="rank-row-v">43%</div>
-        </div><div style="font-size:10px;color:var(--gray-500);margin-left:130px;margin-top:-3px;margin-bottom:8px;font-style:italic">🔴 Vitally previa SP em 7 contas Ent · executados: 3 (43%) · subexecução</div><div class="rank-row">
-          <div class="rank-row-name">QBR formal Vitally</div>
-          <div class="rank-row-bar" style="position:relative"><div class="rank-row-fill" style="width:0%;background:var(--maroon)"></div><span style="position:absolute;left:0%;padding-left:8px;line-height:22px;font-size:10px;font-weight:700;color:var(--maroon)">0 de 3</span></div>
-          <div class="rank-row-v">0%</div>
-        </div><div style="font-size:10px;color:var(--gray-500);margin-left:130px;margin-top:-3px;margin-bottom:8px;font-style:italic">🔴 0% execução · 3 task QBR pendentes (SAP·Desktop·Globo)</div><div class="rank-row">
-          <div class="rank-row-name">QA Sponsor</div>
-          <div class="rank-row-bar" style="position:relative"><div class="rank-row-fill" style="width:NaN%;background:var(--ink-3)">0 de 0</div></div>
-          <div class="rank-row-v">NaN%</div>
-        </div><div style="font-size:10px;color:var(--gray-500);margin-left:130px;margin-top:-3px;margin-bottom:8px;font-style:italic">Sem QA Sponsor previsto Vitally em mai/26 Ent</div><div class="rank-row">
-          <div class="rank-row-name">Recorrência / Monthly Review</div>
-          <div class="rank-row-bar" style="position:relative"><div class="rank-row-fill" style="width:100%;background:var(--teal)">1 de 1</div></div>
-          <div class="rank-row-v">100%</div>
-        </div><div style="font-size:10px;color:var(--gray-500);margin-left:130px;margin-top:-3px;margin-bottom:8px;font-style:italic">1 tag Monthly Review (100%) · MeetRox confirma 11 calls Recor informais</div></div>
-      <div class="acao red" id="exec-02-acao"><div class="acao-h">▶ Ação recomendada · próxima semana</div><div class="acao-text" data-eid="e_o04x6a">🔴 <strong>SP execução em 43% (3 de 7)</strong> e <strong>QBR em 0%</strong> Enterprise — Vitally previa SP em 7 contas e o time executou só 3. SE saudável em 90% (19 de 21). Plano P0: identificar as 4 contas com SP previsto não executado · agendar urgente · QBR SAP/Desktop pendente. Fonte: Vitally task config REAL (100% Growth Ent · só estágios ongoing) + MeetRox executado. <a href="https://camilafontanellacortex.github.io/auditoriameetrox/" target="_blank" style="color:var(--maroon);text-decoration:underline">Auditoria Meetrox</a>.</div></div>
+      <div class="rank" id="exec-02-regua"></div>
+      <div class="acao" id="exec-02-acao"></div>
     </div>
   </div>
 
@@ -408,28 +378,16 @@ body.editing [contenteditable="true"]:focus { background: #fff; outline-style: s
     <div class="s-h">
       <div class="s-num">03</div>
       <div class="s-titles">
-        <div class="s-title" data-eid="e_3f33t6">Cada CS está atingindo seu target individual de cadência?</div>
-        <div class="s-desc" data-eid="e_mrnj2z">% de atingimento de cada CSM vs a régua planejada para a carteira dele — quem está on target, quem precisa de atenção.</div>
+        <div class="s-title">Cada CS está atingindo seu target individual de cadência?</div>
+        <div class="s-desc">% de atingimento de cada CSM vs a régua planejada para a carteira dele — quem está on target, quem precisa de atenção.</div>
       </div>
     </div>
     <div class="s-body">
       <div class="row-3-1">
-        <div class="rank" id="exec-03-rank"><div class="rank-h" data-eid="e_b940qj">Ranking por CS · atingimento vs meta<span class="rank-h-sub">% acumulado mai/26</span></div><div class="rank-row">
-        <div class="rank-row-name">Samara Conrado</div>
-        <div class="rank-row-bar"><div class="rank-row-fill" style="width:92%;background:var(--teal)">11 de 12</div></div>
-        <div class="rank-row-v">92%</div>
-      </div><div class="rank-row">
-        <div class="rank-row-name">Guilherme Vieira</div>
-        <div class="rank-row-bar"><div class="rank-row-fill" style="width:47%;background:var(--amber)">7 de 15</div></div>
-        <div class="rank-row-v">47%</div>
-      </div><div class="rank-row">
-        <div class="rank-row-name">Bruna Glezer</div>
-        <div class="rank-row-bar"><div class="rank-row-fill" style="width:27%;background:var(--maroon)">9 de 33</div></div>
-        <div class="rank-row-v">27%</div>
-      </div></div>
-        <div class="rank" id="exec-03-foto"><div class="rank-h" data-eid="e_mkd1ct">Sem 4 mai (18-26/mai)<span class="rank-h-sub">fotografia da semana</span></div><div style="padding:4px 0;font-size:11px;color:var(--gray-700);border-bottom:1px solid var(--gray-100)">27 calls Enterprise totais</div><div style="padding:4px 0;font-size:11px;color:var(--gray-700);border-bottom:1px solid var(--gray-100)">Bruna 9 · Gui 7 · Samara 11</div><div style="padding:4px 0;font-size:11px;color:var(--gray-700);border-bottom:1px solid var(--gray-100)">Samara líder: 11 calls em 10 contas distintas</div><div style="padding:4px 0;font-size:11px;color:var(--gray-700);border-bottom:1px solid var(--gray-100)">Gui nota baixa: 6,74 (1:1 prioridade)</div><div style="padding:4px 0;font-size:11px;color:var(--gray-700);border-bottom:1px solid var(--gray-100)">Bruna SAP Recor 26/05 nota 5,22 — fadiga</div></div>
+        <div class="rank" id="exec-03-rank"></div>
+        <div class="rank" id="exec-03-foto"></div>
       </div>
-      <div class="acao amber" id="exec-03-acao"><div class="acao-h">▶ Ação recomendada · próxima semana</div><div class="acao-text" data-eid="e_r2zcy"><strong>1:1 Guilherme</strong> · diagnóstico queda qualidade · revisar 3 calls baixas (Sankhya, Red Hat, TINNOVA). <strong>Bruna</strong> · plano SAP — Recorrência mensal não é suficiente sem SP estruturada.</div></div>
+      <div class="acao" id="exec-03-acao"></div>
     </div>
   </div>
 </section>
@@ -451,8 +409,8 @@ body.editing [contenteditable="true"]:focus { background: #fff; outline-style: s
     <div class="s-h">
       <div class="s-num">01</div>
       <div class="s-titles">
-        <div class="s-title" data-eid="e_5wcthn">Qual o delta de execução em maio — o que ficou em aberto?</div>
-        <div class="s-desc" data-eid="e_z40ono">Tasks previstas no Vitally que não foram executadas · QBRs e QAs pendentes · contas sem cadência ativa.</div>
+        <div class="s-title">Qual o delta de execução em maio — o que ficou em aberto?</div>
+        <div class="s-desc">Tasks previstas no Vitally que não foram executadas · QBRs e QAs pendentes · contas sem cadência ativa.</div>
       </div>
     </div>
     <div class="s-body">
@@ -465,13 +423,13 @@ body.editing [contenteditable="true"]:focus { background: #fff; outline-style: s
     <div class="s-h">
       <div class="s-num">02</div>
       <div class="s-titles">
-        <div class="s-title" data-eid="e_k10z3z">Quais contas acumulam GAP em múltiplas dimensões?</div>
-        <div class="s-desc" data-eid="e_2c0b6i">Cruzamento de qualidade × cadência × termômetro. Contas com 3+ flags são prioridade — gap simultâneo em vários eixos sinaliza desinvestimento, não só falta de cadência.</div>
+        <div class="s-title">Quais contas acumulam GAP em múltiplas dimensões?</div>
+        <div class="s-desc">Cruzamento de qualidade × cadência × termômetro. Cada lacuna na entrega da jornada gera <strong>uma flag</strong>. Contas com 3+ flags são prioridade — gap simultâneo em vários eixos sinaliza desinvestimento, não só falta de cadência.<br><span style="font-size:11px;color:var(--gray-600)"><strong>Legenda das flags:</strong> ❶ SP não realizado · ❷ QBR não realizado · ❸ Termômetro CS Ruim/Péssimo · ❹ Último contato &gt; 30 dias · ❺ SE abaixo da meta · ❻ Risco alto / aviso prévio</span></div>
       </div>
     </div>
     <div class="s-body">
       <div class="tbl-wrap"><table>
-        <thead><tr><th>Conta</th><th>CS</th><th>SP?</th><th>QBR?</th><th>Pulse</th><th>Comm 30d</th><th class="num">MRR</th><th>Flags</th></tr></thead>
+        <thead><tr><th>Conta</th><th>CS</th><th>SP?</th><th>QBR?</th><th>Termômetro CS</th><th>Últ. contato</th><th class="num">MRR</th><th>Flags</th></tr></thead>
         <tbody id="aberto-02-gap-tbody"></tbody>
       </table></div>
       <div class="acao red" id="aberto-02-acao"></div>
@@ -482,8 +440,8 @@ body.editing [contenteditable="true"]:focus { background: #fff; outline-style: s
     <div class="s-h">
       <div class="s-num">03</div>
       <div class="s-titles">
-        <div class="s-title" data-eid="e_dpr2rx">Itens não realizados · próximo passo e responsável definidos?</div>
-        <div class="s-desc" data-eid="e_x7uukn">Cada item em aberto deve ter motivo declarado pelo CS no Vitally, data prevista e próximo passo claro.</div>
+        <div class="s-title">Itens não realizados · próximo passo e responsável definidos?</div>
+        <div class="s-desc">Cada item em aberto deve ter motivo declarado pelo CS no Vitally, data prevista e próximo passo claro.</div>
       </div>
     </div>
     <div class="s-body">
@@ -512,8 +470,8 @@ body.editing [contenteditable="true"]:focus { background: #fff; outline-style: s
     <div class="s-h">
       <div class="s-num">01</div>
       <div class="s-titles">
-        <div class="s-title" data-eid="e_9n5xsm">Qual a distribuição de qualidade das calls em maio?</div>
-        <div class="s-desc" data-eid="e_8qnfat">Notas Meetrox oficiais · contas churnadas isoladas das análises · % calls críticas (&lt;6) e abaixo da meta (&lt;7).</div>
+        <div class="s-title">Qual a distribuição de qualidade das calls em maio?</div>
+        <div class="s-desc">Notas Meetrox oficiais · contas churnadas isoladas das análises · % calls críticas (&lt;6) e abaixo da meta (&lt;7).</div>
       </div>
     </div>
     <div class="s-body">
@@ -527,8 +485,8 @@ body.editing [contenteditable="true"]:focus { background: #fff; outline-style: s
     <div class="s-h">
       <div class="s-num">02</div>
       <div class="s-titles">
-        <div class="s-title" data-eid="e_sw9a5i">Como o time está em cada dimensão da rúbrica?</div>
-        <div class="s-desc" data-eid="e_27d0j0">Rúbrica reweighted · GV (peso 3) · EA (peso 2) · PP (peso 2) · PS (peso 1,5) · AS (peso 1,5) · escala 0-10. GV é o final — gera o maior peso.</div>
+        <div class="s-title">Qual o principal ofensor em qualidade — onde focar coaching?</div>
+        <div class="s-desc">Rúbrica reweighted (GV ×3 · EA ×2 · PP ×2 · PS ×1,5 · AS ×1,5 · escala 0-10). Mostra a média do time por dimensão — quem está abaixo de 7 é gap sistêmico (todos os CSs) e direciona ação coletiva. Para gap individual por CS, ver painel Por CS.</div>
       </div>
     </div>
     <div class="s-body">
@@ -541,8 +499,8 @@ body.editing [contenteditable="true"]:focus { background: #fff; outline-style: s
     <div class="s-h">
       <div class="s-num">03</div>
       <div class="s-titles">
-        <div class="s-title" data-eid="e_vcv6pv">Quais os ofensores principais — incluindo múltiplos quando delta &lt; 5pp?</div>
-        <div class="s-desc" data-eid="e_hp3sn7">Se cada dimensão tem ~20% de presença como gap, não faz sentido destacar só uma. Trazemos todos os ofensores quando o delta top1/top2 é menor que 5pp.</div>
+        <div class="s-title">Quais os ofensores principais — incluindo múltiplos quando delta &lt; 5pp?</div>
+        <div class="s-desc">Se cada dimensão tem ~20% de presença como gap, não faz sentido destacar só uma. Trazemos todos os ofensores quando o delta top1/top2 é menor que 5pp.</div>
       </div>
     </div>
     <div class="s-body">
@@ -550,6 +508,23 @@ body.editing [contenteditable="true"]:focus { background: #fff; outline-style: s
         <thead><tr><th>Dimensão</th><th>% calls com gap</th><th>Diagnóstico</th></tr></thead>
         <tbody id="qual-03-ofens-tbody"></tbody>
       </table></div>
+    </div>
+  </div>
+
+  <div class="s">
+    <div class="s-h">
+      <div class="s-num">04</div>
+      <div class="s-titles">
+        <div class="s-title">Ranking por CS · qualidade das calls em maio</div>
+        <div class="s-desc">Como cada CS está individualmente · nº de calls elegíveis, nota média (rúbrica reweighted), duração média, % calls ≥7, no-shows/inválidas e cobertura jornada. Fonte: <a href="https://camilafontanellacortex.github.io/auditoriameetrox/" target="_blank" style="color:var(--purple);font-weight:600">Auditoria MeetRox</a> · 97 calls mai/26.</div>
+      </div>
+    </div>
+    <div class="s-body">
+      <div class="tbl-wrap"><table>
+        <thead><tr><th>#</th><th>CS</th><th>Esteira</th><th class="num">Elegíveis / Total</th><th class="num">Nota média</th><th class="num">Duração média</th><th class="num">% calls ≥7</th><th class="num">No-show / Inválida</th><th class="num">Cobertura jornada</th></tr></thead>
+        <tbody id="qual-04-rank-tbody"></tbody>
+      </table></div>
+      <div class="acao" id="qual-04-acao"></div>
     </div>
   </div>
 </section>
@@ -563,7 +538,7 @@ body.editing [contenteditable="true"]:focus { background: #fff; outline-style: s
     <div class="como-ler-h">📖 Como ler este painel</div>
     <div class="como-ler-text">
       <strong>Op × Performance</strong> cruza o que NÓS fazemos (Operação CS) com o resultado que o CLIENTE entrega (Performance).<br>
-      <strong>① Termômetro CS × IA:</strong> compara percepção do CSM (input no Vitally) com sentimento detectado pela IA na transcrição. Discrepância grande (Δ ≥ 1) = leitura equivocada. <strong>② Performance do cliente:</strong> nota da call + termômetros + resultado validado em 5 colunas (leads · prospectados · reuniões · OPs · vendas). Classifica em <em>Bom resultado · On track · Mediano · Below hurdle</em>.
+      <strong>① Termômetro CS × IA:</strong> compara percepção do CSM (input no Vitally) com sentimento detectado pela IA na transcrição. Discrepância grande (Δ ≥ 1) = leitura equivocada. <strong>② Performance do cliente:</strong> nota da call + termômetros + resultado validado em 5 colunas (leads · prospectados · reuniões · OPs · vendas). Classifica em <em>Bom resultado · On track · Em aceleração · Em monitoramento · Below hurdle</em>. <strong>Em aceleração</strong> = tem sinal positivo recente, precisa empurrar. <strong>Em monitoramento</strong> = estável, sem direção clara, observar.
     </div>
   </div>
 
@@ -571,8 +546,8 @@ body.editing [contenteditable="true"]:focus { background: #fff; outline-style: s
     <div class="s-h">
       <div class="s-num">01</div>
       <div class="s-titles">
-        <div class="s-title" data-eid="e_xgq137">A leitura do CS bate com o que a IA detecta na call?</div>
-        <div class="s-desc" data-eid="e_7vl46y">Termômetro CS (input do CSM no Vitally, parâmetro do health score) vs Termômetro IA (análise de sentimento da transcrição). Discrepância grande = sinal de leitura equivocada.</div>
+        <div class="s-title">A leitura do CS bate com o que a IA detecta na call?</div>
+        <div class="s-desc">Termômetro CS (input do CSM no Vitally, parâmetro do health score) vs Termômetro IA (análise de sentimento da transcrição). Discrepância grande = sinal de leitura equivocada.</div>
       </div>
     </div>
     <div class="s-body">
@@ -588,8 +563,8 @@ body.editing [contenteditable="true"]:focus { background: #fff; outline-style: s
     <div class="s-h">
       <div class="s-num">02</div>
       <div class="s-titles">
-        <div class="s-title" data-eid="e_cqi9f4">A operação do CS está se traduzindo em performance no cliente?</div>
-        <div class="s-desc" data-eid="e_3chehv">Cruza qualidade da nossa execução (CS) com resultado real do cliente (form product validado) — leads · prospectados · reuniões · OPs · vendas. Classifica em <strong>Bom resultado · On track · Mediano · Below hurdle</strong>.</div>
+        <div class="s-title">A operação do CS está se traduzindo em performance no cliente?</div>
+        <div class="s-desc">Cruza qualidade da nossa execução (CS) com resultado real do cliente (form product validado) — leads · prospectados · reuniões · OPs · vendas. Classifica em <strong>Bom resultado · On track · Em aceleração · Em monitoramento · Below hurdle</strong>.</div>
       </div>
     </div>
     <div class="s-body">
@@ -617,17 +592,17 @@ body.editing [contenteditable="true"]:focus { background: #fff; outline-style: s
     <div class="s-h">
       <div class="s-num">03</div>
       <div class="s-titles">
-        <div class="s-title" id="opperf-03-title" data-eid="e_x6sfwm">Highlight · Sentimento das calls (Meetrox)</div>
-        <div class="s-desc" data-eid="e_23j5el">Distribuição da percepção do cliente nas calls auditadas em mai/26 · por esteira. Cada call tem justificativa textual na <a href="https://camilafontanellacortex.github.io/auditoriameetrox/" target="_blank" style="color:var(--purple);font-weight:600">Auditoria Meetrox · Sentimento &amp; Resultados</a>.</div>
+        <div class="s-title" id="opperf-03-title">Highlight · Sentimento das calls (Meetrox)</div>
+        <div class="s-desc">Distribuição da percepção do cliente nas calls auditadas em mai/26 · por esteira. Cada call tem justificativa textual na <a href="https://camilafontanellacortex.github.io/auditoriameetrox/" target="_blank" style="color:var(--purple);font-weight:600">Auditoria Meetrox · Sentimento & Resultados</a>.</div>
       </div>
     </div>
     <div class="s-body">
       <div class="kpi-row">
-        <div class="kpi" style="border-left:3px solid var(--teal)"><div class="kpi-l" data-eid="e_svgb02">😊 Positivo</div><div class="kpi-v teal" id="sent-pos">—</div><div class="kpi-s" id="sent-pos-sub" data-eid="e_f91ehj">—</div></div>
-        <div class="kpi" style="border-left:3px solid var(--purple)"><div class="kpi-l" data-eid="e_jpqm10">😐 Neutro</div><div class="kpi-v purple" id="sent-neu">—</div><div class="kpi-s" id="sent-neu-sub" data-eid="e_f91ehj_2">—</div></div>
-        <div class="kpi" style="border-left:3px solid var(--maroon)"><div class="kpi-l" data-eid="e_x9cgpy">😞 Negativo</div><div class="kpi-v red" id="sent-neg">—</div><div class="kpi-s" id="sent-neg-sub" data-eid="e_f91ehj_3">—</div></div>
+        <div class="kpi" style="border-left:3px solid var(--teal)"><div class="kpi-l">😊 Positivo</div><div class="kpi-v teal" id="sent-pos">—</div><div class="kpi-s" id="sent-pos-sub">—</div></div>
+        <div class="kpi" style="border-left:3px solid var(--purple)"><div class="kpi-l">😐 Neutro</div><div class="kpi-v purple" id="sent-neu">—</div><div class="kpi-s" id="sent-neu-sub">—</div></div>
+        <div class="kpi" style="border-left:3px solid var(--maroon)"><div class="kpi-l">😞 Negativo</div><div class="kpi-v red" id="sent-neg">—</div><div class="kpi-s" id="sent-neg-sub">—</div></div>
       </div>
-      <div class="acao amber"><div class="acao-h">▶ Próxima semana</div><div class="acao-text" id="sent-acao" data-eid="e_nf4d5j">—</div></div>
+      <div class="acao amber"><div class="acao-h">▶ Próxima semana</div><div class="acao-text" id="sent-acao">—</div></div>
     </div>
   </div>
 
@@ -635,18 +610,18 @@ body.editing [contenteditable="true"]:focus { background: #fff; outline-style: s
     <div class="s-h">
       <div class="s-num">04</div>
       <div class="s-titles">
-        <div class="s-title" id="opperf-04-title" data-eid="e_6o7efo">Highlight · Sales Performance + QBR · análise de resultado</div>
-        <div class="s-desc" data-eid="e_2hvjmz">Das calls SP/QBR de mai (por esteira), em quantas o cliente compartilhou números? Quando não, por quê? Fonte: <a href="https://camilafontanellacortex.github.io/auditoriameetrox/" target="_blank" style="color:var(--purple);font-weight:600">Auditoria Meetrox · Sales Performance &amp; QBR</a>.</div>
+        <div class="s-title" id="opperf-04-title">Highlight · Sales Performance + QBR · análise de resultado</div>
+        <div class="s-desc">Das calls SP/QBR de mai (por esteira), em quantas o cliente compartilhou números? Quando não, por quê? Fonte: <a href="https://camilafontanellacortex.github.io/auditoriameetrox/" target="_blank" style="color:var(--purple);font-weight:600">Auditoria Meetrox · Sales Performance &amp; QBR</a>.</div>
       </div>
     </div>
     <div class="s-body">
       <div class="kpi-row">
-        <div class="kpi" style="border-left:3px solid var(--purple)"><div class="kpi-l" data-eid="e_g1i3em">Calls SP/QBR</div><div class="kpi-v purple" id="spqbr-total">—</div><div class="kpi-s" id="spqbr-total-sub" data-eid="e_f91ehj_4">—</div></div>
-        <div class="kpi" style="border-left:3px solid var(--teal)"><div class="kpi-l" data-eid="e_whlzqn">✅ Com resultado</div><div class="kpi-v teal" id="spqbr-com">—</div><div class="kpi-s" id="spqbr-com-sub" data-eid="e_f91ehj_5">—</div></div>
-        <div class="kpi" style="border-left:3px solid var(--amber)"><div class="kpi-l" data-eid="e_hun19u">⚠ Parcial</div><div class="kpi-v amber" id="spqbr-parc">—</div><div class="kpi-s" id="spqbr-parc-sub" data-eid="e_f91ehj_6">—</div></div>
-        <div class="kpi" style="border-left:3px solid var(--maroon)"><div class="kpi-l" data-eid="e_4zwape">❌ Sem resultado</div><div class="kpi-v red" id="spqbr-sem">—</div><div class="kpi-s" id="spqbr-sem-sub" data-eid="e_f91ehj_7">—</div></div>
+        <div class="kpi" style="border-left:3px solid var(--purple)"><div class="kpi-l">Calls SP/QBR</div><div class="kpi-v purple" id="spqbr-total">—</div><div class="kpi-s" id="spqbr-total-sub">—</div></div>
+        <div class="kpi" style="border-left:3px solid var(--teal)"><div class="kpi-l">✅ Com resultado</div><div class="kpi-v teal" id="spqbr-com">—</div><div class="kpi-s" id="spqbr-com-sub">—</div></div>
+        <div class="kpi" style="border-left:3px solid var(--amber)"><div class="kpi-l">⚠ Parcial</div><div class="kpi-v amber" id="spqbr-parc">—</div><div class="kpi-s" id="spqbr-parc-sub">—</div></div>
+        <div class="kpi" style="border-left:3px solid var(--maroon)"><div class="kpi-l">❌ Sem resultado</div><div class="kpi-v red" id="spqbr-sem">—</div><div class="kpi-s" id="spqbr-sem-sub">—</div></div>
       </div>
-      <div class="acao"><div class="acao-h">▶ Próxima semana</div><div class="acao-text" id="spqbr-acao" data-eid="e_nf4d5j_2">—</div></div>
+      <div class="acao"><div class="acao-h">▶ Próxima semana</div><div class="acao-text" id="spqbr-acao">—</div></div>
     </div>
   </div>
 </section>
@@ -668,8 +643,8 @@ body.editing [contenteditable="true"]:focus { background: #fff; outline-style: s
     <div class="s-h">
       <div class="s-num">01</div>
       <div class="s-titles">
-        <div class="s-title" data-eid="e_8d32ka">Ranking individual · cada CSM em cada dimensão</div>
-        <div class="s-desc" data-eid="e_sm9g85">Performance individual na jornada × execução semanal. Esquerda: raio-X por CS (carteira + cadência + qualidade + dimensões). Direita: fotografia da Sem 4 mai (18-26/mai).</div>
+        <div class="s-title">Ranking individual · cada CSM em cada dimensão</div>
+        <div class="s-desc">Performance individual na jornada × execução semanal. Esquerda: raio-X por CS (carteira + cadência + qualidade + dimensões). Direita: fotografia da Sem 4 mai (18-26/mai).</div>
       </div>
     </div>
     <div class="s-body">
@@ -695,8 +670,8 @@ body.editing [contenteditable="true"]:focus { background: #fff; outline-style: s
     <div class="s-h">
       <div class="s-num">01</div>
       <div class="s-titles">
-        <div class="s-title" data-eid="e_fugp9w">Qual a exposição forward-looking 90 + 180 dias?</div>
-        <div class="s-desc" data-eid="e_bj558v">Olhamos apenas pra frente — não retrospectiva. Janela de salvamento aberta = próximos 90d (intervenção possível). Janela secundária = 90-180d (preparação).</div>
+        <div class="s-title">Qual a exposição forward-looking 90 + 180 dias?</div>
+        <div class="s-desc">Olhamos apenas pra frente — não retrospectiva. Janela de salvamento aberta = próximos 90d (intervenção possível). Janela secundária = 90-180d (preparação).</div>
       </div>
     </div>
     <div class="s-body">
@@ -709,13 +684,13 @@ body.editing [contenteditable="true"]:focus { background: #fff; outline-style: s
     <div class="s-h">
       <div class="s-num">02</div>
       <div class="s-titles">
-        <div class="s-title" data-eid="e_a46guu">Quais contas renovam nos próximos 90 dias?</div>
-        <div class="s-desc" data-eid="e_ksbeq4">Contas com vencimento entre jun e ago/26. Sem cadência ativa = 0 ou 1 call em maio E +30d sem contato.</div>
+        <div class="s-title">Quais contas renovam nos próximos 90 dias?</div>
+        <div class="s-desc">Contas com vencimento entre jun e ago/26. Sem cadência ativa = 0 ou 1 call em maio E +30d sem contato. <strong style="color:var(--maroon)">Contas em aviso prévio formal são excluídas</strong> — a janela contratual já está sendo cumprida, não há mais ação de retenção possível.</div>
       </div>
     </div>
     <div class="s-body">
       <div class="tbl-wrap"><table>
-        <thead><tr><th>Conta</th><th>CS</th><th class="num">MRR</th><th>Renov.</th><th>Auto?</th><th>Aviso prévio</th><th>Pulse</th><th class="num">Calls mai</th><th>Status</th></tr></thead>
+        <thead><tr><th>Conta</th><th>CS</th><th class="num">MRR</th><th>Renov.</th><th>Auto?</th><th>Aviso prévio</th><th>Termômetro CS</th><th class="num">Calls mai</th><th>Status</th></tr></thead>
         <tbody id="risco-02-90d-tbody"></tbody>
       </table></div>
       <div class="acao" id="risco-02-acao"></div>
@@ -726,13 +701,13 @@ body.editing [contenteditable="true"]:focus { background: #fff; outline-style: s
     <div class="s-h">
       <div class="s-num">03</div>
       <div class="s-titles">
-        <div class="s-title" data-eid="e_wbqv1z">Quais contas renovam entre 90-180 dias?</div>
-        <div class="s-desc" data-eid="e_npzyse">Janela secundária — preparação. Pulse já indica risco preventivo · QBR formal recomendado ainda em jun/jul.</div>
+        <div class="s-title">Quais contas renovam entre 90-180 dias?</div>
+        <div class="s-desc">Janela secundária — preparação. Termômetro CS já indica risco preventivo · QBR formal recomendado ainda em jun/jul. <strong style="color:var(--maroon)">Contas em aviso prévio excluídas</strong> dessa lista.</div>
       </div>
     </div>
     <div class="s-body">
       <div class="tbl-wrap"><table>
-        <thead><tr><th>Conta</th><th>CS</th><th class="num">MRR</th><th>Renov.</th><th>Auto?</th><th>Aviso prévio</th><th>Pulse</th><th>Status</th></tr></thead>
+        <thead><tr><th>Conta</th><th>CS</th><th class="num">MRR</th><th>Renov.</th><th>Auto?</th><th>Aviso prévio</th><th>Termômetro CS</th><th>Status</th></tr></thead>
         <tbody id="risco-03-180d-tbody"></tbody>
       </table></div>
     </div>
@@ -742,8 +717,8 @@ body.editing [contenteditable="true"]:focus { background: #fff; outline-style: s
     <div class="s-h">
       <div class="s-num">04</div>
       <div class="s-titles">
-        <div class="s-title" data-eid="e_27czx3">Churn formalizado · foco mai/26 + histórico Jan-Abr</div>
-        <div class="s-desc" data-eid="e_ju5qy4">Painel focado em maio/26. Histórico Jan-Abr aparece agregado para contexto. Contas churnadas são <strong>isoladas das análises de qualidade</strong> (não contam mais para nota da equipe). Fonte: planilha GRR 2026.</div>
+        <div class="s-title">Churn formalizado · foco mai/26 + histórico Jan-Abr</div>
+        <div class="s-desc">Painel focado em maio/26. Histórico Jan-Abr aparece agregado para contexto. Contas churnadas são <strong>isoladas das análises de qualidade</strong> (não contam mais para nota da equipe). Fonte: planilha GRR 2026.</div>
       </div>
     </div>
     <div class="s-body">
@@ -751,6 +726,43 @@ body.editing [contenteditable="true"]:focus { background: #fff; outline-style: s
         <thead><tr><th>Conta</th><th>CS</th><th class="num">MRR perdido</th><th>Mês churn</th><th>Status</th></tr></thead>
         <tbody id="risco-04-churned-tbody"></tbody>
       </table></div>
+    </div>
+  </div>
+
+  <div class="s">
+    <div class="s-h">
+      <div class="s-num">05</div>
+      <div class="s-titles">
+        <div class="s-title">Esteira do CS · 3 buckets de ação looking forward</div>
+        <div class="s-desc">Visão consolidada para decisão semanal de gestão: <strong>① Em aberto</strong> (contas sem task realizada em mai · risco oculto) · <strong>② Em risco</strong> (Termômetro Ruim/Péssimo + renovação 60-90d) · <strong>③ Expandir</strong> (qualidade alta + resultado validado + sponsor engajado). Substitui a leitura fragmentada de "achismo" do dia a dia.</div>
+      </div>
+    </div>
+    <div class="s-body">
+      <div style="background:#FEF3F2;border-left:3px solid var(--maroon);padding:12px 14px;margin-bottom:14px;border-radius:6px">
+        <div style="font-size:12px;font-weight:700;color:var(--maroon);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">① Em aberto · "ainda não falei com esse cliente em maio"</div>
+        <div class="tbl-wrap"><table>
+          <thead><tr><th>Conta</th><th>CS</th><th>Esteira</th><th class="num">MRR</th><th>Renovação</th><th>Última task Vitally</th><th>Próxima ação sugerida</th></tr></thead>
+          <tbody id="esteira-aberto-tbody"></tbody>
+        </table></div>
+      </div>
+
+      <div style="background:#FEF6E8;border-left:3px solid var(--amber);padding:12px 14px;margin-bottom:14px;border-radius:6px">
+        <div style="font-size:12px;font-weight:700;color:var(--amber);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">② Em risco · "falei mas tá ruim — termômetro Ruim/Péssimo + renovação próxima"</div>
+        <div class="tbl-wrap"><table>
+          <thead><tr><th>Conta</th><th>CS</th><th>Esteira</th><th class="num">MRR</th><th>Renovação</th><th>Termômetro CS</th><th>Sinal</th><th>Próxima ação sugerida</th></tr></thead>
+          <tbody id="esteira-risco-tbody"></tbody>
+        </table></div>
+      </div>
+
+      <div style="background:#E6F4F1;border-left:3px solid var(--teal);padding:12px 14px;border-radius:6px">
+        <div style="font-size:12px;font-weight:700;color:var(--teal);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">③ Expandir · "qualidade boa + resultado validado + sponsor engajado"</div>
+        <div class="tbl-wrap"><table>
+          <thead><tr><th>Conta</th><th>CS</th><th>Esteira</th><th class="num">MRR</th><th>Nota call</th><th>Resultado</th><th>Termômetro CS</th><th>Próxima ação sugerida</th></tr></thead>
+          <tbody id="esteira-expandir-tbody"></tbody>
+        </table></div>
+      </div>
+
+      <div class="acao" id="esteira-acao"></div>
     </div>
   </div>
 </section>
@@ -763,8 +775,8 @@ body.editing [contenteditable="true"]:focus { background: #fff; outline-style: s
   <div class="como-ler">
     <div class="como-ler-h">📖 Como ler este painel</div>
     <div class="como-ler-text">
-      <strong>Plano</strong> é a resposta operacional ao diagnóstico das outras 6 abas. Iniciativas priorizadas por impacto em ARR e reversibilidade.<br>
-      <strong>P0 · crítico:</strong> entregar até segunda-feira (sprint QBR, erradicar invisíveis, war room). <strong>P1 · alta:</strong> 30 dias (coaching individual, checklist Agenda Estruturada, Termômetro CS+IA). <strong>Metas:</strong> indicadores principais com baseline atual, meta 30d e 60d — reavaliação quinzenal. Os problemas são <em>sistêmicos</em>: causa raiz de processo, não de pessoa.
+      <strong>Plano = sugestões de ação para a próxima sprint de 15 dias.</strong> Não é diagnóstico do passado — é o "so what" das outras 6 abas. Iniciativas priorizadas por impacto em ARR e reversibilidade, validadas na reunião quinzenal de performance com a liderança.<br>
+      <strong>P0 · crítico:</strong> ação na sprint atual (até segunda) — war room, QBR de sponsor C-level, agendas com contas em risco 60-90d. <strong>P1 · alta:</strong> próximas 4 sprints (30 dias) — coaching individual, checklist Agenda Estruturada, integrações automáticas. <strong>Metas:</strong> indicadores principais com baseline, meta 30d e 60d · reavaliação quinzenal. Os problemas são <em>sistêmicos</em>: causa raiz de processo, não de pessoa.
     </div>
   </div>
 
@@ -772,8 +784,8 @@ body.editing [contenteditable="true"]:focus { background: #fff; outline-style: s
     <div class="s-h">
       <div class="s-num">01</div>
       <div class="s-titles">
-        <div class="s-title" data-eid="e_ua3l3t">P0 · entregar até segunda-feira</div>
-        <div class="s-desc" data-eid="e_obyp0l">Iniciativas críticas — recorte mai/26 + visão forward-looking + cobertura jornada régua×executado + layout idêntico Ent×Com + reordenação de painéis.</div>
+        <div class="s-title">P0 · sprint atual (próximos 15 dias)</div>
+        <div class="s-desc">Ações imediatas com contas que renovam em 60-90 dias + execução pendente de SP/QBR/QA. Looking forward — não auditoria do passado.</div>
       </div>
     </div>
     <div class="s-body" id="plano-01-cards"></div>
@@ -783,8 +795,8 @@ body.editing [contenteditable="true"]:focus { background: #fff; outline-style: s
     <div class="s-h">
       <div class="s-num">02</div>
       <div class="s-titles">
-        <div class="s-title" data-eid="e_5od98o">P1 · alta · 30 dias</div>
-        <div class="s-desc" data-eid="e_5xwawo">Renomear Op × Performance · Termômetro CS+IA · Reweighting rúbrica · Tabela "Quem acumula GAP" · % No-Show / curtas.</div>
+        <div class="s-title">P1 · próximas 4 sprints (30 dias)</div>
+        <div class="s-desc">Coaching individual com base no Termômetro CS+IA e gaps por dimensão · template de Agenda Estruturada padronizado · automação de preenchimento HubSpot→Vitally (em andamento com Sales Ops) para retirar carga manual do CS.</div>
       </div>
     </div>
     <div class="s-body" id="plano-02-cards"></div>
@@ -794,8 +806,8 @@ body.editing [contenteditable="true"]:focus { background: #fff; outline-style: s
     <div class="s-h">
       <div class="s-num">03</div>
       <div class="s-titles">
-        <div class="s-title" data-eid="e_s0oqc1">Metas · 30-60 dias</div>
-        <div class="s-desc" data-eid="e_uiv2v3">Indicadores principais com baseline atual, meta 30d e 60d. Reavaliação quinzenal.</div>
+        <div class="s-title">Metas · 30-60 dias</div>
+        <div class="s-desc">Indicadores principais com baseline atual, meta 30d e 60d. Reavaliação quinzenal.</div>
       </div>
     </div>
     <div class="s-body">
@@ -824,16 +836,14 @@ const DATA = {
     exec01_title: 'A esteira atingiu o volume de calls necessário para cobrir a base Ent em maio?',
     exec01_desc: 'Calls Meetrox + tasks Vitally vs 20 contas Ongoing — quantas contas foram efetivamente tocadas.',
     exec01_kpis: [
-      { l:'Cobertura cliente', v:'70%', cls:'amber', s:'16/23 contas com task em mai · 7 invisíveis', bar:70, barColor:'var(--amber)' },
+      { l:'Cobertura jornada', v:'75%', cls:'amber', s:'15/20 contas com task realizada em mai', bar:75, barColor:'var(--amber)' },
       { l:'Tasks Vitally', v:'83%', cls:'teal', s:'45/54 realizadas', bar:83, barColor:'var(--teal)' },
-      { l:'QBR/Recor cobertura', v:'0%', cls:'red', s:'0/3 QBR Ent previstas Vitally executadas · 11 Recor MeetRox', bar:0, barColor:'var(--maroon)' },
       { l:'Calls Meetrox link', v:'26%', cls:'amber', s:'6/23 contas registradas', bar:26, barColor:'var(--amber)' },
-      { l:'Invisíveis', v:'30%', cls:'red', s:'7/23 sem task em mai · Bruna concentra 6 de 7 (86%)' },
       { l:'Nota Meetrox', v:'8,49', cls:'teal', s:'21 calls elegíveis · meta 8,0 ✓' },
       { l:'% calls <6', v:'14%', cls:'amber', s:'3/21 calls críticas' },
       { l:'No-Show / curtas', v:'14%', cls:'red', s:'3 calls ≤5min ou ausência' }
     ],
-    exec01_acao: { type:'teal', text:'<strong>Foco em Bruna · 6 de 7 contas Ent invisíveis em mai/26 (86%)</strong>. SAP BRASIL LTDA · DESKTOP · BUNZL LATAM (3 SP zeradas) · BUNZL Proteção · BUNZL Hospitalia · CPQD. Gui: 1 invisível (Valecard). Samara: 0. Plano P0: abrir task ou call em cada uma até 10/06.' },
+    exec01_acao: { type:'teal', text:'<strong>Foco em Bruna · 3 de 4 contas Ent invisíveis em mai/26 (75%)</strong>. BUNZL HOSPITALIA · BUNZL LATAM · BUNZL Proteção. Samara: 1 invisível (XP). Gui/outros: 0. Plano P0: abrir task ou call em cada uma até 15/06.' },
 
     exec02_regua: [
       { l:'SE · Sales Engagement', meta:21, real:19, color:'var(--teal)', nota:'✓ Vitally task config (100% Growth Ent · 23/23) · 90% execução · saudável' },
@@ -872,7 +882,7 @@ const DATA = {
     ],
     aberto02_acao: { type:'red', text:'<strong>SAP é prioridade absoluta:</strong> 5 flags simultâneas, R$19K MRR. Não pode ir pra renovação sem SP + QBR estruturados.' },
     aberto03_itens: [
-      ['SAP BRASIL','Bruna','QBR formal','✓ Coutinho participou 21/05 (Bruna+Samara) · QBR registro Vitally pendente','01/06','Marcar QBR formal · pauta SP+Recor consolidada','Bruna'],
+      ['SAP BRASIL','Bruna','QBR formal','SP 21/05 com Coutinho ok (sponsor engajado) · QBR trimestral não realizado','20/06','Agendar QBR formal com Coutinho · pauta SP+Recor','Bruna'],
       ['DESKTOP SI','Bruna','QBR formal','Cris não confirmou','10/04 atrasado','Ligar segunda','Bruna'],
       ['BUNZL BRASIL','Bruna','QBR formal','Aguarda Paloma','27/04 atrasado','Reativar conversa','Bruna'],
       ['GLOBO','Samara','QBR formal','Bloqueio interno cliente','10/04','✓ Agendado 06/06','Samara'],
@@ -909,6 +919,13 @@ const DATA = {
       ['Geração de Valor','<span class="pill amber">29%</span>','6/21 com GV operacional sem conectar a resultado']
     ],
 
+    qual04_rank: [
+      ['🥇','Samara Conrado','Ent','2/4','9,69','28min','<span class="pill teal">100%</span>','0 / 2','<span class="pill teal">100% (6/6)</span>'],
+      ['🥈','Bruna Glezer','Ent','10/13','8,01','40min','<span class="pill amber">70%</span>','0 / 3','<span class="pill red">50% (6/12)</span>'],
+      ['🥉','Guilherme Vieira','Ent','14/14','7,78','38min','<span class="pill teal">93%</span>','0 / 0','<span class="pill amber">80% (4/5)</span>']
+    ],
+    qual04_acao: { type:'teal', text:'<strong>Samara é referência</strong> · nota 9,69 e cobertura jornada 100% (6/6 contas). <strong>Bruna concentra os 2 problemas Ent</strong> · cobertura 50% (6 de 12 contas sem task realizada) + AS 5,0 puxa a nota. Coaching individual com foco em template de Agenda Estruturada.' },
+
     opperf01_term: [
       ['SAP BRASIL','Bruna','🟡 Ruim','🟡 Ruim','0','Alinhado após SP Coutinho 21/05 · próximo passo: QBR formal'],
       ['XP INVESTIMENTOS','Samara','🔴 Péssimo','🔴 Péssimo','0','Alinhado · ambos críticos'],
@@ -918,20 +935,22 @@ const DATA = {
     ],
     opperf01_acao: { type:'amber', text:'<strong>XP Investimentos (Samara) · SAP · IFOOD (Bruna):</strong> 3 contas Enterprise com leitura Ruim/Péssimo em CS e IA alinhadas — risco capturado pelas duas fontes. Próximo passo: QBR formal em SAP (Coutinho participou da SP 21/05) e plano de salvamento em IFOOD (em salvamento ativo). Nenhuma discrepância CS×IA crítica em Enterprise.' },
     opperf02_clientes: [
-      ['SAP BRASIL','Bruna','7,12 (média 6 calls)','🟡','🟡','12.300','4.800','24','7','2','<span class="pill amber">Mediano · SP 21/05 ✓</span>'],
+      ['SAP BRASIL','Bruna','7,12 (média 6 calls)','🟡','🟡','12.300','4.800','24','7','2','<span class="pill amber">Em aceleração · SP 21/05 ✓</span><br><span style="font-size:9px;color:#9CA3AF">⏰ Aviso em risco · saída 06/out</span>'],
+      ['IFOOD','Bruna','—','🔴','🔴','—','—','—','—','—','<span class="pill red">💀 Churn confirmado</span><br><span style="font-size:9px;color:#DC2626">Saída 17/ago/26 · FORMALIZADO</span>'],
       ['QIVE','Guilherme','8,01','🟢','🟢','8.500','6.200','47','12','5','<span class="pill teal">Bom resultado</span>'],
-      ['SANKHYA','Guilherme','7,63','🟢','🟢','6.800','5.100','38','9','4','<span class="pill teal">On track</span>'],
-      ['MERCADO LIVRE','Samara','7,00','🟢','🟢','4.200','3.100','22','6','2','<span class="pill amber">Mediano</span>'],
+      ['SANKHYA','Guilherme','7,63','🟢','🟢','6.800','5.100','38','9','4','<span class="pill teal">On track</span><br><span style="font-size:9px;color:#9CA3AF">⏰ Aviso em risco · saída 12/set</span>'],
+      ['RED HAT BR','Guilherme','—','🟡','🟡','—','—','—','—','—','<span class="pill amber">Em monitoramento</span><br><span style="font-size:9px;color:#9CA3AF">⏰ Aviso em risco · saída 24/jun</span>'],
+      ['MERCADO LIVRE','Samara','7,00','🟢','🟢','4.200','3.100','22','6','2','<span class="pill amber">Em monitoramento</span>'],
       ['XP INVESTIMENTOS','Samara','6,88','🔴','🔴','1.200','480','6','1','0','<span class="pill red">Below hurdle</span>']
     ],
-    opperf02_acao: { type:'red', text:'<strong>1 conta Below hurdle</strong> · XP Investimentos · R$ 15K MRR · 1 call mai (nota 6,88) + zero vendas. SAP é Mediano (nota 7,12 · SP 21/05 ✓) — risco menor. Plano XP esta semana.' },
+    opperf02_acao: { type:'red', text:'<strong>1 conta Below hurdle ativa</strong> · XP Investimentos · R$ 15K MRR · 1 call mai (nota 6,88) + zero vendas. SAP é Em aceleração (nota 7,12 · SP 21/05 ✓) — risco menor.<br><br><strong>💀 1 churn confirmado:</strong> IFOOD (Bruna) · R$ 30K MRR · saída 17/ago/26 · FORMALIZADO no GRR — tratar como churn realizado.<br><br><strong>⏰ 3 contas com aviso em risco</strong> (ainda em janela de salvamento): SAP (06/out) · SANKHYA (12/set) · RED HAT BR (24/jun). Bunzl 4 contas idem (não listadas acima — ver Risco). Janela contratual em curso.' },
 
     porcs_grid: [
       { nome:'Samara Conrado', emoji:'🥇', meta:'2 calls elegíveis · 4 total · Carteira 4 contas', score:9.69, scoreCls:'teal',
         dim:[{l:'GV',v:10.0,c:'high'},{l:'EA',v:10.0,c:'high'},{l:'PP',v:10.0,c:'high'},{l:'AS',v:7.5,c:'mid'},{l:'PS',v:10.0,c:'high'}],
         pos:['Demonstração ao vivo extremamente didática','Personalizou treinamento por produto Flash','Antecipou dúvidas sobre crédito'],
         gaps:['Agenda não estruturada (1 call)'],
-        risco:'XP · R$ 15K mai · 1 call (6,88) · Pulse Péssimo' },
+        risco:'XP · R$ 15K mai · 1 call (6,88) · Termômetro CS Péssimo' },
       { nome:'Bruna Glezer', emoji:'5º', meta:'10 calls elegíveis · 13 total · Carteira 12 contas Ent', score:8.01, scoreCls:'teal',
         dim:[{l:'GV',v:8.5,c:'high'},{l:'EA',v:10.0,c:'high'},{l:'PP',v:8.0,c:'high'},{l:'AS',v:5.0,c:'low'},{l:'PS',v:6.5,c:'mid'}],
         pos:['Boa escuta ativa · relacionamento cordial','Métricas concretas','Expansão de escopo natural'],
@@ -941,7 +960,7 @@ const DATA = {
         dim:[{l:'GV',v:6.8,c:'mid'},{l:'EA',v:10.0,c:'high'},{l:'PP',v:9.6,c:'high'},{l:'AS',v:5.7,c:'low'},{l:'PS',v:6.1,c:'mid'}],
         pos:['Conhecimento profundo do contexto','Boa preparação e escuta'],
         gaps:['Agenda não estruturada (5 calls)','PS sem formalização (5 calls)','GV limitada ao operacional'],
-        risco:'RED HAT · R$ 20K jun · Pulse Neutro · retomou cadência 25/05' }
+        risco:'RED HAT · R$ 20K jun · Termômetro CS Neutro · retomou cadência 25/05' }
     ],
 
     risco01_kpis: [
@@ -964,7 +983,26 @@ const DATA = {
     ],
     risco04_churned: [
       ['📊 HISTÓRICO Jan-Abr/26','agregado','R$ 162K','jan-abr','<span class="pill amber">7 contas · top: RED, CLOUDWALK, THOMSON, PIPEFY, ARMAC…</span>']
-    ]
+    ],
+    esteira_aberto: [
+      ['SAP BRASIL LTDA','Bruna','Ent','R$ 19K','ago/26','—','Agendar QBR formal (Coutinho engajado na SP 21/05) · pauta consolidada SP+Recor'],
+      ['DESKTOP SI','Bruna','Ent','R$ 8,5K','10/jul','—','Ligar Cris segunda + agendar QBR · cliente em salvamento'],
+      ['BUNZL LATAM','Bruna','Ent','R$ 8K','set/26','3 SP previstas zeradas','Executar 1 SP até 10/06 · BUNZL acumula gap em 3 contas'],
+      ['BUNZL EQUIP. PROTEÇÃO','Bruna','Ent','—','—','Sem tasks no mês','Abrir task + revisar jornada Vitally'],
+      ['FUNDAÇÃO CPQD','Bruna','Ent','—','—','Sem tasks no mês','Abrir task + revisar jornada Vitally'],
+      ['VALECARD','Guilherme','Ent','—','—','Sem tasks no mês','Abrir task + validar mapping de jornada']
+    ],
+    esteira_risco: [
+      ['IFOOD','Bruna','Ent','R$ 30K','17/ago','🟡 Ruim','Em salvamento · sentimento neutro nas calls','Documentar plano de salvamento · QA Sponsor jun'],
+      ['RED HAT BRASIL','Guilherme','Ent','R$ 20K','24/jun','⚪ Neutro','Em salvamento · retomou cadência 25/05','Follow-up com sponsor sênior antes de 15/06'],
+      ['XP INVESTIMENTOS','Samara','Ent','R$ 15K','—','🔴 Péssimo','1 call mai (6,88) · Termômetro Péssimo','Reconquistar sponsor · plano específico esta semana']
+    ],
+    esteira_expandir: [
+      ['QIVE','Guilherme','Ent','R$ 24K','8,01','Bom resultado','🟢 Ótimo','Mapear ofertas adicionais · QBR estratégico jul'],
+      ['SANKHYA','Guilherme','Ent','R$ 23K','7,63','On track','🟢 Bom','Conversa de upgrade · janela após QBR'],
+      ['MERCADO LIVRE','Samara','Ent','R$ 13K','7,00','Em monitoramento · resultado consistente','🟢 Bom','QBR para alinhar prioridades próximo trimestre']
+    ],
+    esteira_acao: { type:'amber', text:'<strong>Enterprise · prioridade Bruna:</strong> 5 das 6 contas Em aberto são dela. Foco semanal: SAP (sponsor engajado → QBR) e BUNZL LATAM (3 SP zeradas). Expandir tem 3 candidatos sólidos · Guilherme com 2 (QIVE e Sankhya). XP é a conta com sinal mais crítico — sponsor perdido.' }
   },
 
   commercial: {
@@ -976,11 +1014,9 @@ const DATA = {
     exec01_title:'A esteira Commercial atingiu o volume de calls necessário em maio?',
     exec01_desc:'Calls Meetrox + tasks Vitally vs 119 contas Ongoing — operação muito menos visível que Enterprise.',
     exec01_kpis: [
-      { l:'Cobertura cliente', v:'55%', cls:'amber', s:'65/119 tocadas em mai · 54 invisíveis', bar:55, barColor:'var(--amber)' },
+      { l:'Cobertura jornada', v:'60%', cls:'amber', s:'62/104 contas com task realizada em mai', bar:60, barColor:'var(--amber)' },
       { l:'Tasks Vitally', v:'41%', cls:'amber', s:'163/397 realizadas', bar:41, barColor:'var(--amber)' },
-      { l:'QBR/Recor cobertura', v:'0%', cls:'red', s:'0/6 QBR previstas Vitally executadas', bar:0, barColor:'var(--maroon)' },
       { l:'Calls Meetrox link', v:'22%', cls:'red', s:'26/119 contas registradas', bar:22, barColor:'var(--maroon)' },
-      { l:'Invisíveis', v:'45%', cls:'red', s:'54/119 sem task realizada em mai' },
       { l:'Nota Meetrox', v:'7,75', cls:'amber', s:'60 calls elegíveis · meta 8,0 · gap −0,25' },
       { l:'% calls <6', v:'17%', cls:'red', s:'10/60 calls críticas' },
       { l:'No-Show / curtas', v:'9%', cls:'amber', s:'8 calls ≤5min ou ausência' }
@@ -1068,6 +1104,14 @@ const DATA = {
       ['Preparação Prévia','<span class="pill amber">37%</span>','22/60 · falta de contexto · Rafael e Macir']
     ],
 
+    qual04_rank: [
+      ['🥇','Thiago Garcia','Com','15/19','8,54','47min','<span class="pill teal">87%</span>','0 / 4','<span class="pill red">45% (14/31)</span>'],
+      ['🥈','Victor Reis','Com','12/14','8,47','37min','<span class="pill amber">75%</span>','1 / 1','<span class="pill amber">67% (20/30)</span>'],
+      ['🥉','Macir Junior','Com','10/11','8,38','40min','<span class="pill amber">70%</span>','0 / 1','<span class="pill red">55% (16/29)</span>'],
+      ['4º','Rafael Ferreira','Com','18/22','6,90','37min','<span class="pill red">44%</span>','2 / 2','<span class="pill red">52% (15/29)</span>']
+    ],
+    qual04_acao: { type:'red', text:'<strong>Rafael 6,90 + 44% calls ≥7</strong> é o gap individual mais grave do time Com. <strong>Cobertura jornada 45-55%</strong> em todas as carteiras Commercial — Thiago tem boa qualidade mas só toca 14 de 31 contas. Prioridade: 1:1 Rafael (qualidade) + sprint de cobertura nas 4 carteiras.' },
+
     opperf01_term: [
       ['PULSUS','Victor','🟡 Ruim','🔴 Péssimo','−1','CS otimista · IA detecta tensão'],
       ['DOT DIGITAL','Macir','🔴 Péssimo','🔴 Péssimo','0','Alinhado · crítico'],
@@ -1080,11 +1124,11 @@ const DATA = {
       ['PROMETEON','Thiago','9,38','🟢','🟢','4.200','3.800','38','12','6','<span class="pill teal">Bom resultado</span>'],
       ['SAQUE E PAGUE','Macir','9,38','🟢','🟢','5.100','4.200','32','10','5','<span class="pill teal">Bom resultado</span>'],
       ['IT UNIVERSE','Rafael','8,00','🟢','🟢','3.800','2.900','24','8','3','<span class="pill teal">On track</span>'],
-      ['BRR CRÉDITO','Victor','3,42','⚪','🔴','450','120','3','0','0','<span class="pill red">Below hurdle</span>'],
+      ['BRR CRÉDITO','Victor','3,42','⚪','🔴','450','120','3','0','0','<span class="pill red">💀 Churn confirmado</span><br><span style="font-size:9px;color:#DC2626">Saída 22/jul/26 · FORMALIZADO</span>'],
       ['PULSUS','Victor','5,80','🟡','🔴','1.800','620','8','1','0','<span class="pill red">Below hurdle</span>'],
-      ['DREAMSHAPER','Macir','4,75','🔴','🔴','200','50','2','0','0','<span class="pill red">Below hurdle</span>']
+      ['DREAMSHAPER','Macir','4,75','🔴','🔴','200','50','2','0','0','<span class="pill red">💀 Churn confirmado</span><br><span style="font-size:9px;color:#DC2626">Saída 11/jun/26 · essa semana</span>']
     ],
-    opperf02_acao: { type:'red', text:'<strong>3 contas Below hurdle</strong> · execução fraca + zero vendas. BRR · Pulsus · Dreamshaper são as primeiras candidatas a churn — plano coordenado essa semana.' },
+    opperf02_acao: { type:'red', text:'<strong>1 conta Below hurdle ativa</strong> · PULSUS (Victor · 5,80 · zero vendas). Sem aviso prévio formal — única candidata a salvamento.<br><br><strong>💀 2 churns confirmados nesta tabela:</strong> BRR Crédito (Victor · 22/jul) · Dreamshaper (Macir · 11/jun · essa semana) — ambos FORMALIZADOS no GRR.<br><br><strong>💀 Churn confirmado · 11 contas Com totais</strong> (FORMALIZADO no GRR · tratar como churn realizado): Macir 7 (Dreamshaper 11/jun · Azul 21/jun · Dot Digital 07/ago · Netsoft 17/ago · A Sala 17/set · Elements 05/out · Paytrack 15/out) · Rafael 3 (Umov 03/jul · Deep ESG 03/ago) · Thiago 3 (B2Finance 01/jul · Shein 17/set) · Victor 2 (BRR 22/jul · Partners 14/out). <br><br><strong>⏰ 4 contas com aviso em risco</strong> (ainda em janela · ainda salváveis): Macir Matera 21/jul · Zoop 13/ago · Thiago Consigaz 27/jul · GrupoSave 08/set · BSA LATAM 01/set · Rafael Solargrid 31/ago.' },
 
     porcs_grid: [
       { nome:'Thiago Garcia', emoji:'🥈', meta:'15 calls elegíveis · 19 total · Carteira 26 contas', score:8.54, scoreCls:'teal',
@@ -1126,7 +1170,7 @@ const DATA = {
       ['POSITIVO','Thiago','R$ 9K','20/jun','⚪ Neutro','0','<span class="pill amber">Sem call mai</span>'],
       ['B2FINANCE','Thiago','R$ 8K','30/jun','🟢 Bom','1','<span class="pill teal">Em Salvamento</span>']
     ],
-    risco02_acao: { type:'red', text:'<strong>6 contas em 90d.</strong> 3 com Pulse Péssimo · 1 sem call em maio. PULSUS · PRESTEX · MADRIPEL precisam de plano de salvamento documentado.' },
+    risco02_acao: { type:'red', text:'<strong>6 contas em 90d.</strong> 3 com Termômetro CS Péssimo · 1 sem call em maio. PULSUS · PRESTEX · MADRIPEL precisam de plano de salvamento documentado.' },
     risco03_180d: [
       ['UMOV.ME','Rafael','R$ 12K','03/jul','✓ Auto','30d · até 03/06','⚪ Neutro','<span class="pill amber">Médio</span>'],
       ['MATERA','Macir','R$ 8K','20/jul','❌ Manual','60d · até 21/05','⚪ Neutro','<span class="pill amber">Em Salvamento</span>'],
@@ -1143,7 +1187,29 @@ const DATA = {
       ['PULSUS GTMB2B','Victor','R$ 9.8K','mai/26','<span class="pill red">Churn mai/26 · foco do painel</span>'],
       ['ACTIVE CLOUD SOLUTIONS GTMB2B','Victor','R$ 8.0K','mai/26','<span class="pill red">Churn mai/26 · foco do painel</span>'],
       ['ALMATA QUÍMICA GTMB2B','Victor','R$ 8.0K','mai/26','<span class="pill red">Churn mai/26 · foco do painel</span>']
-    ]
+    ],
+    esteira_aberto: [
+      ['MADRIPEL','Rafael','Com','R$ 8K','mai/26','Última: mai · 0 calls Meetrox','Reagendar — última task sem call associada'],
+      ['DOT DIGITAL','Macir','Com','R$ 8K','06/ago','Sem task em mai · +35d sem contato','Agendar SP antes da renovação · Termômetro Péssimo'],
+      ['NETSOFT','Macir','Com','R$ 13K','—','Sem task em mai · +22d sem contato','Abrir task · validar status'],
+      ['CLICKSIGN','Macir','Com','R$ 18K','—','Sem task em mai · +30d sem contato','Validar mapping de jornada urgente · 5 flags'],
+      ['BERGHEM','Victor','Com','R$ 8K','jul/26','Sem task · +18d sem contato','Agendar SP até 15/06'],
+      ['BUNZL "CLICKSIGN ENT?"','Rafael','Com','R$ 13K','—','+22d sem contato','Confirmar carteira/CS · revisar invisibilidade']
+    ],
+    esteira_risco: [
+      ['BRR CRÉDITO','Victor','Com','R$ 8K','+20d','🔴 Péssimo','3 flags · próximo do churn','1:1 com Tatiana + plano reversão · IA detecta tensão'],
+      ['PULSUS','Victor','Com','R$ 10K','mai/26','🟡 Ruim','Em salvamento ativo','Plano 60d documentado · monitoramento semanal'],
+      ['IRON MOUNTAIN','Thiago','Com','R$ 11K','31/jul','🟡 Ruim','Auto-renew + 90d aviso prévio (até 02/05)','Confirmar status de renovação · risco alto'],
+      ['ADT BRASIL','Thiago','Com','R$ 12K','03/ago','🟡 Ruim','60d aviso (até 04/06)','Sprint final de retenção · plano explícito'],
+      ['DREAMSHAPER','Macir','Com','—','—','🔴 Péssimo','Nota 4,75 · zero vendas','Diagnóstico de causa raiz · pode ir pra Em aberto se decidir desinvestir']
+    ],
+    esteira_expandir: [
+      ['PROMETEON','Thiago','Com','—','9,38','Bom resultado · 6 vendas mapeadas','🟢 Ótimo','Mapear ofertas adicionais · QBR consultivo'],
+      ['SAQUE E PAGUE','Macir','Com','—','9,38','Bom resultado · 5 vendas mapeadas','🟢 Ótimo','Conversa de upgrade · sponsor engajado'],
+      ['NETSECURITY','Rafael','Com','—','—','IA detecta sinal positivo (Δ +1 vs CS)','🟢 Ótimo','Investigar oportunidade de upsell — IA mais positiva que CS'],
+      ['v360','Thiago','Com','—','10,0','Nota máxima 2 calls mai · cliente engajado','🟢 Ótimo','Sustentação + mapear ofertas Cortex adicionais']
+    ],
+    esteira_acao: { type:'amber', text:'<strong>Commercial · 4 dores principais:</strong> Em aberto concentrado em Macir (NETSOFT, DOT, CLICKSIGN). Em risco com 5 contas críticas — BRR e PULSUS precisam de plano documentado esta semana. Expandir tem 4 candidatos sólidos (PROMETEON, SAQUE E PAGUE, NETSECURITY e v360) — Thiago e Macir concentram as oportunidades.' }
   },
 
   consolidado: {
@@ -1155,16 +1221,14 @@ const DATA = {
     exec01_title:'A operação CS como um todo atingiu o volume necessário em maio?',
     exec01_desc:'Visão agregada Ent + Com — para comparativo e leitura de macro. Bottom-up: olhar esteira antes de consolidado.',
     exec01_kpis: [
-      { l:'Cobertura cliente', v:'57%', cls:'amber', s:'81/142 tocadas em mai · 61 invisíveis', bar:57, barColor:'var(--amber)' },
+      { l:'Cobertura jornada', v:'62%', cls:'amber', s:'77/124 contas com task realizada em mai', bar:62, barColor:'var(--amber)' },
       { l:'Tasks Vitally', v:'46%', cls:'amber', s:'208/451 · Ent 83% · Com 41%', bar:46, barColor:'var(--amber)' },
-      { l:'QBR/Recor cobertura', v:'0%', cls:'red', s:'0/9 QBR previstas Vitally executadas (Ent+Com)', bar:0, barColor:'var(--maroon)' },
       { l:'Calls Meetrox link', v:'23%', cls:'amber', s:'32/142 · Ent 26% · Com 22%' },
-      { l:'Invisíveis', v:'43%', cls:'red', s:'61/142 contas · risco descoberto' },
       { l:'Nota Meetrox', v:'7,96', cls:'amber', s:'81 elegíveis · meta 8,0 · gap −0,04' },
       { l:'% calls <6', v:'14%', cls:'amber', s:'11/81 calls críticas' },
       { l:'No-Show / curtas', v:'11%', cls:'amber', s:'11 calls ≤5min ou ausência' }
     ],
-    exec01_acao: { type:'amber', text:'<strong>Ent executa bem em tasks mas QBR concentrado.</strong> Com com 41% tasks e 4% QBR — risco descoberto crítico. 46 invisíveis no total (37%).' },
+    exec01_acao: { type:'amber', text:'<strong>Ent executa bem em tasks mas QBR concentrado.</strong> Com com 38% tasks e 4% QBR — risco descoberto crítico. 42 invisíveis no total (34%) · Bruna concentra 75% dos invisíveis Ent (3 BUNZL).' },
 
     exec02_regua: [
       { l:'SE · Sales Engagement', meta:193, real:102, color:'var(--amber)', nota:'✓ Vitally task config REAL (100% Growth · 142/142) · 53% execução · gap de 91 calls' },
@@ -1245,6 +1309,17 @@ const DATA = {
       ['Preparação Prévia','<span class="pill amber">35%</span>','28/81 · Bruna e Rafael frequente']
     ],
 
+    qual04_rank: [
+      ['🥇','Samara Conrado','Ent','2/4','9,69','28min','<span class="pill teal">100%</span>','0 / 2','<span class="pill teal">100% (6/6)</span>'],
+      ['🥈','Thiago Garcia','Com','15/19','8,54','47min','<span class="pill teal">87%</span>','0 / 4','<span class="pill red">45% (14/31)</span>'],
+      ['🥉','Victor Reis','Com','12/14','8,47','37min','<span class="pill amber">75%</span>','1 / 1','<span class="pill amber">67% (20/30)</span>'],
+      ['4º','Macir Junior','Com','10/11','8,38','40min','<span class="pill amber">70%</span>','0 / 1','<span class="pill red">55% (16/29)</span>'],
+      ['5º','Bruna Glezer','Ent','10/13','8,01','40min','<span class="pill amber">70%</span>','0 / 3','<span class="pill red">50% (6/12)</span>'],
+      ['6º','Guilherme Vieira','Ent','14/14','7,78','38min','<span class="pill teal">93%</span>','0 / 0','<span class="pill amber">80% (4/5)</span>'],
+      ['7º','Rafael Ferreira','Com','18/22','6,90','37min','<span class="pill red">44%</span>','2 / 2','<span class="pill red">52% (15/29)</span>']
+    ],
+    qual04_acao: { type:'amber', text:'<strong>Polarização do time:</strong> Samara é referência (9,69 · cobertura 100%) e Rafael é o gap (6,90 · 44% calls ≥7 · 2 no-shows). Em qualidade, AS é sistêmico (6/7 CSMs). Em cobertura jornada, só Samara e Guilherme acima de 80% — carteiras de Bruna, Thiago, Macir e Rafael abaixo de 55%.' },
+
     opperf01_term: [
       ['SAP BRASIL','Bruna','🟡 Ruim','🟡 Ruim','0','Alinhado após SP Coutinho 21/05 · próximo passo: QBR formal'],
       ['PULSUS','Victor','🟡 Ruim','🔴 Péssimo','−1','CS otimista · IA detecta tensão'],
@@ -1257,17 +1332,17 @@ const DATA = {
       ['PROMETEON','Thiago','9,38','🟢','🟢','4.200','3.800','38','12','6','<span class="pill teal">Bom resultado</span>'],
       ['QIVE','Guilherme','8,01','🟢','🟢','8.500','6.200','47','12','5','<span class="pill teal">Bom resultado</span>'],
       ['SAQUE E PAGUE','Macir','9,38','🟢','🟢','5.100','4.200','32','10','5','<span class="pill teal">Bom resultado</span>'],
-      ['SANKHYA','Guilherme','7,63','🟢','🟢','6.800','5.100','38','9','4','<span class="pill teal">On track</span>'],
-      ['SAP BRASIL','Bruna','7,12 (média 6 calls)','🟡','🟡','12.300','4.800','24','7','2','<span class="pill amber">Mediano · SP 21/05 ✓</span>'],
-      ['BRR CRÉDITO','Victor','3,42','⚪','🔴','450','120','3','0','0','<span class="pill red">Below hurdle</span>'],
-      ['DREAMSHAPER','Macir','4,75','🔴','🔴','200','50','2','0','0','<span class="pill red">Below hurdle</span>']
+      ['SANKHYA','Guilherme','7,63','🟢','🟢','6.800','5.100','38','9','4','<span class="pill teal">On track</span><br><span style="font-size:9px;color:#9CA3AF">⏰ Aviso em risco · saída 12/set</span>'],
+      ['SAP BRASIL','Bruna','7,12 (média 6 calls)','🟡','🟡','12.300','4.800','24','7','2','<span class="pill amber">Em aceleração · SP 21/05 ✓</span><br><span style="font-size:9px;color:#9CA3AF">⏰ Aviso em risco · saída 06/out</span>'],
+      ['BRR CRÉDITO','Victor','3,42','⚪','🔴','450','120','3','0','0','<span class="pill red">💀 Churn confirmado</span><br><span style="font-size:9px;color:#DC2626">Saída 22/jul/26 · FORMALIZADO</span>'],
+      ['DREAMSHAPER','Macir','4,75','🔴','🔴','200','50','2','0','0','<span class="pill red">💀 Churn confirmado</span><br><span style="font-size:9px;color:#DC2626">Saída 11/jun/26 · essa semana</span>']
     ],
-    opperf02_acao: { type:'red', text:'<strong>2 contas Below hurdle</strong> · BRR Crédito (Victor · 3,42 · zero vendas) e Dreamshaper (Macir · 4,75 · zero vendas). R$ 9K MRR direto exposto. Plano coordenado essa semana.' },
+    opperf02_acao: { type:'red', text:'<strong>💀 Tratamento de churn (FORMALIZADO no GRR · 12 contas Growth):</strong><br>Já churnado (data passou — saída 01/jun): Madripel · ADT Brasil · Clicksign · Becomex.<br>Saída em jun/jul/26: Dreamshaper 11/jun · Azul 21/jun · B2Finance 01/jul · Umov 03/jul · Matera 21/jul · BRR 22/jul · Consigaz 27/jul.<br>Saída em ago/26: IFOOD 17/ago · Dot Digital 07/ago · Deep ESG 03/ago · Netsoft 17/ago · Zoop 13/ago · Shein 17/set.<br>Saída em set-out/26: A Sala 17/set · Solargrid 31/ago · Elements 05/out · Paytrack 15/out · Partners 14/out.<br><br><strong>⏰ Aviso em risco · 8 contas ainda salváveis:</strong> Bunzl 4 (Equip 05/set · LATAM 07/nov · Hospitalia 29/dez · Proteção) · HP 24/set · SAP 06/out · Sankhya 12/set · Red Hat BR 24/jun · Flash redução 29/ago · GrupoSave 08/set · BSA LATAM 01/set.' },
 
     porcs_grid: [
       { nome:'Samara Conrado', emoji:'🥇', meta:'Enterprise · 2 calls elegíveis', score:9.69, scoreCls:'teal',
         dim:[{l:'GV',v:10.0,c:'high'},{l:'EA',v:10.0,c:'high'},{l:'PP',v:10.0,c:'high'},{l:'AS',v:7.5,c:'mid'},{l:'PS',v:10.0,c:'high'}],
-        pos:['Demonstração extremamente didática','Personalizou por produto'], gaps:['Agenda não estruturada'], risco:'XP · R$ 15K mai · 1 call (6,88) · Pulse Péssimo' },
+        pos:['Demonstração extremamente didática','Personalizou por produto'], gaps:['Agenda não estruturada'], risco:'XP · R$ 15K mai · 1 call (6,88) · Termômetro CS Péssimo' },
       { nome:'Thiago Garcia', emoji:'🥈', meta:'Commercial · 15 calls elegíveis', score:8.54, scoreCls:'teal',
         dim:[{l:'GV',v:8.7,c:'high'},{l:'EA',v:9.7,c:'high'},{l:'PP',v:8.7,c:'high'},{l:'AS',v:7.3,c:'mid'},{l:'PS',v:7.3,c:'mid'}],
         pos:['Contato com ausência de stakeholders','Transparência'], gaps:['PS vagos','Não reagendou'], risco:'IRON MOUNTAIN · ADT' },
@@ -1306,7 +1381,7 @@ const DATA = {
       ['POSITIVO','Thiago','R$ 9K','20/jun','❌ Manual','60d · até 21/04','⚪ Neutro','0','<span class="pill amber">Sem call mai</span>'],
       ['B2FINANCE','Thiago','R$ 8K','30/jun','✓ Auto','30d · até 31/05','🟢 Bom','1','<span class="pill teal">Em Salvamento</span>']
     ],
-    risco02_acao: { type:'red', text:'<strong>7 contas em 90d.</strong> 3 com Pulse Péssimo · 4 em risco alto. Plano de salvamento por conta documentado até 05/06.' },
+    risco02_acao: { type:'red', text:'<strong>7 contas em 90d.</strong> 3 com Termômetro CS Péssimo · 4 em risco alto. Plano de salvamento por conta documentado até 05/06.' },
     risco03_180d: [
       ['UMOV.ME','Rafael','R$ 12K','03/jul','✓ Auto','30d · até 03/06','⚪ Neutro','<span class="pill amber">Médio</span>'],
       ['DESKTOP SI','Bruna','R$ 9K','10/jul','❌ Manual','90d · até 11/04','🟡 Neutro','<span class="pill amber">Em Salvamento</span>'],
@@ -1328,7 +1403,37 @@ const DATA = {
       ['PULSUS GTMB2B','Victor','R$ 9.8K','mai/26','<span class="pill red">Churn mai/26 · foco do painel</span>'],
       ['ACTIVE CLOUD SOLUTIONS GTMB2B','Victor','R$ 8.0K','mai/26','<span class="pill red">Churn mai/26 · foco do painel</span>'],
       ['ALMATA QUÍMICA GTMB2B','Victor','R$ 8.0K','mai/26','<span class="pill red">Churn mai/26 · foco do painel</span>']
-    ]
+    ],
+    esteira_aberto: [
+      ['SAP BRASIL LTDA','Bruna','Ent','R$ 19K','ago/26','—','Agendar QBR formal (Coutinho engajado SP 21/05)'],
+      ['DESKTOP SI','Bruna','Ent','R$ 8,5K','10/jul','—','Ligar Cris segunda + agendar QBR'],
+      ['BUNZL LATAM','Bruna','Ent','R$ 8K','set/26','3 SP previstas zeradas','Executar 1 SP até 10/06'],
+      ['VALECARD','Guilherme','Ent','—','—','Sem tasks no mês','Abrir task + revisar jornada'],
+      ['MADRIPEL','Rafael','Com','R$ 8K','mai/26','Última: mai · 0 calls Meetrox','Reagendar — last task sem call'],
+      ['DOT DIGITAL','Macir','Com','R$ 8K','06/ago','Sem task · +35d sem contato','Agendar SP antes da renovação'],
+      ['NETSOFT','Macir','Com','R$ 13K','—','Sem task · +22d sem contato','Abrir task · validar status'],
+      ['CLICKSIGN','Macir','Com','R$ 18K','—','Sem task · +30d sem contato','Validar mapping urgente · 5 flags'],
+      ['BERGHEM','Victor','Com','R$ 8K','jul/26','Sem task · +18d sem contato','Agendar SP até 15/06']
+    ],
+    esteira_risco: [
+      ['IFOOD','Bruna','Ent','R$ 30K','17/ago','🟡 Ruim','Em salvamento · sentimento neutro','Documentar plano de salvamento'],
+      ['RED HAT BRASIL','Guilherme','Ent','R$ 20K','24/jun','⚪ Neutro','Em salvamento · cadência 25/05','Follow-up sponsor sênior até 15/06'],
+      ['XP INVESTIMENTOS','Samara','Ent','R$ 15K','—','🔴 Péssimo','1 call (6,88) · sponsor perdido','Reconquistar sponsor · plano específico'],
+      ['BRR CRÉDITO','Victor','Com','R$ 8K','+20d','🔴 Péssimo','3 flags · próximo do churn','1:1 Tatiana + plano reversão'],
+      ['PULSUS','Victor','Com','R$ 10K','mai/26','🟡 Ruim','Em salvamento ativo','Plano 60d documentado'],
+      ['IRON MOUNTAIN','Thiago','Com','R$ 11K','31/jul','🟡 Ruim','Auto-renew + 90d aviso (até 02/05)','Confirmar status de renovação'],
+      ['ADT BRASIL','Thiago','Com','R$ 12K','03/ago','🟡 Ruim','60d aviso (até 04/06)','Sprint final de retenção']
+    ],
+    esteira_expandir: [
+      ['QIVE','Guilherme','Ent','R$ 24K','8,01','Bom resultado','🟢 Ótimo','Mapear ofertas adicionais · QBR estratégico jul'],
+      ['SANKHYA','Guilherme','Ent','R$ 23K','7,63','On track','🟢 Bom','Conversa de upgrade após QBR'],
+      ['PROMETEON','Thiago','Com','—','9,38','Bom resultado · 6 vendas','🟢 Ótimo','Mapear ofertas adicionais · QBR consultivo'],
+      ['SAQUE E PAGUE','Macir','Com','—','9,38','Bom resultado · 5 vendas','🟢 Ótimo','Conversa de upgrade'],
+      ['v360','Thiago','Com','—','10,0','Nota máxima 2 calls mai · cliente engajado','🟢 Ótimo','Sustentação + ofertas Cortex adicionais'],
+      ['NETSECURITY','Rafael','Com','—','—','IA detecta sinal positivo (Δ +1 vs CS)','🟢 Ótimo','Investigar oportunidade de upsell'],
+      ['MERCADO LIVRE','Samara','Ent','R$ 13K','7,00','Em monitoramento · resultado consistente','🟢 Bom','QBR alinhamento próximo trimestre']
+    ],
+    esteira_acao: { type:'amber', text:'<strong>Visão looking forward · 7 CSs · 142 contas:</strong> ① Em aberto (9 críticas) concentradas em Bruna (Ent) e Macir (Com). ② Em risco (7 contas, R$ 104K MRR) com 2 prioridades: BRR e PULSUS — planos documentados esta semana. ③ Expandir (7 candidatos, R$ ~80K MRR potencial) — Guilherme e Thiago concentram as oportunidades. Pauta da reunião quinzenal de performance com a liderança.' }
   }
 };
 
@@ -1336,7 +1441,7 @@ const PLANO = {
   enterprise: {
     p0: [
       { titulo:'Sprint QBR Enterprise · cobertura formal Vitally', problema:'Cadência via Recorrência roda (46 calls em 5 contas), mas QBR formal registrado é só 1/6. SAP · Desktop · Bunzl pendentes no Vitally.', acao:'Bruna · marcar 3 QBRs formais até 10/06 (SAP/Desktop/Bunzl). SAP já teve SP com Coutinho 21/05 — só falta registro.' },
-      { titulo:'1:1 Bruna · 86% das invisíveis Ent (6 de 7)', problema:'Bruna concentra quase todas invisíveis Enterprise — SAP/Desktop/BUNZL LATAM (3 SP zeradas)/BUNZL Proteção/BUNZL Hospitalia/CPQD. AS dimensão crítica 5,0. Admitiu não preparar calls.', acao:'1:1 com Stela 02/06 · plano de cobertura para 6 contas · BUNZL LATAM tem 3 SP previstas zero executadas · template AS obrigatório.' }
+      { titulo:'1:1 Bruna · 75% das invisíveis Ent (3 de 4)', problema:'Bruna concentra invisíveis Enterprise — BUNZL LATAM (sem contato 197d) · BUNZL Proteção (sem contato 206d) · BUNZL Hospitalia. AS dimensão crítica 5,0. Admitiu não preparar calls.', acao:'1:1 com Stela essa semana · plano de cobertura para 3 BUNZL · template AS obrigatório.' }
     ],
     p1: [
       { titulo:'Coaching Guilherme · queda Sem 4 mai (6,74)', problema:'GV 6,8 + AS 5,7 + PS 6,1 — 3 dimensões abaixo da meta. 3 calls Sem 4 mai baixas (Sankhya, Red Hat, TINNOVA).', acao:'Coaching foco GV · review 1 call/sem · meta 7,5 em 30d.' },
@@ -1347,14 +1452,14 @@ const PLANO = {
       ['Invisíveis Ent','Sem task nem call','<span class="pill red">5 (25%)</span>','<span class="pill amber">2 (10%)</span>','<span class="pill teal">0</span>'],
       ['Tasks Vitally Ent','Taxa execução','<span class="pill teal">83%</span>','<span class="pill teal">90%</span>','<span class="pill teal">95%</span>'],
       ['Nota Meetrox Ent','Nota média','<span class="pill teal">8,49</span>','<span class="pill teal">8,6</span>','<span class="pill teal">8,8</span>'],
-      ['Bruna coaching','% invisíveis carteira (6/8)','<span class="pill red">75%</span>','<span class="pill amber">25%</span>','<span class="pill teal">0%</span>']
+      ['Bruna coaching','% invisíveis carteira (3/11 BUNZL)','<span class="pill amber">27%</span>','<span class="pill teal">10%</span>','<span class="pill teal">0%</span>']
     ]
   },
   commercial: {
     p0: [
-      { titulo:'Erradicar contas invisíveis Commercial', problema:'54 contas (45%) sem task realizada em mai. Concentrado em Thiago (17), Rafael (14), Macir (13), Victor (10).', acao:'Meta 0 invisíveis em junho · task ou call até 15/06 · acompanhamento semanal por CS.' },
+      { titulo:'Erradicar contas invisíveis Commercial', problema:'38 contas (37%) sem task realizada em mai. Concentrado em Thiago (12), Victor (11), Macir (8), Rafael (7).', acao:'Meta 0 invisíveis em junho · task ou call até 15/06 · acompanhamento semanal por CS.' },
       { titulo:'Sprint QBR Commercial · base elegível', problema:'0/6 QBR previstas Vitally executadas em mai. 23 com renovação em 90d e QBR pendente.', acao:'Listar 20 contas MRR ≥ R$5K renov 90d · agendar QBR até 30/06.' },
-      { titulo:'War room R$282K em risco', problema:'33 contas risco alto · 26 sem contato 30d+. 6 contas em renovação 90d · 12 em 180d com Pulse Ruim/Péssimo.', acao:'Reunião 30min Rodrigo + 4 CSMs Com + Stela · top 10 ARR · plano por conta · início 02/06.' }
+      { titulo:'War room R$282K em risco', problema:'33 contas risco alto · 26 sem contato 30d+. 6 contas em renovação 90d · 12 em 180d com Termômetro CS Ruim/Péssimo.', acao:'Reunião 30min Rodrigo + 4 CSMs Com + Stela · top 10 ARR · plano por conta · início 02/06.' }
     ],
     p1: [
       { titulo:'1:1 Rafael · nota 6,90 (única <7)', problema:'PS vagos · aceitou churn passivo (Deep) · GTM sem prazo. 27 contas em carteira com qualidade baixa.', acao:'Coaching semanal Rodrigo + Stela · review 1 call/sem · checklist PS pré-call · meta 7,5 em 30d.' },
@@ -1373,7 +1478,7 @@ const PLANO = {
   consolidado: {
     p0: [
       { titulo:'Sprint QBR · cobertura de jornada (total)', problema:'Ent 25% das 20 Ongoing com QBR/Recor. Com 4%. 22 contas em 90d com QBR pendente.', acao:'Identificar contas com renovação 90d sem QBR → agendar até 10/06 · realizar até 30/06.' },
-      { titulo:'Erradicar contas invisíveis', problema:'61 contas (43%) sem task realizada em mai. Ent: 7 (Bruna 6 · Gui 1). Com: 54 (Thiago 17 · Rafael 14 · Macir 13 · Victor 10).', acao:'Meta 0 invisíveis em junho · task ou call até 15/06 para cada conta · prioridade Ent (concentrada em Bruna).' },
+      { titulo:'Erradicar contas invisíveis', problema:'42 contas (34%) sem task realizada em mai. Ent: 4 (Bruna 3 BUNZL · Samara 1 XP). Com: 38 (Thiago 12 · Victor 11 · Macir 8 · Rafael 7).', acao:'Meta 0 invisíveis em junho · task ou call até 15/06 para cada conta · prioridade Bruna (3 BUNZL) e Thiago (12 invisíveis em 26 contas).' },
       { titulo:'War room semanal R$+50K em risco', problema:'R$ 403K MRR em risco · 34 alto risco · 40 em salvamento sem call.', acao:'Reunião 30min Camila + 7 CSMs + Stela · top 10 ARR · plano por conta · início 02/06.' }
     ],
     p1: [
@@ -1454,13 +1559,13 @@ function render(){
     setAcao('exec-01-acao', D.exec01_acao)
     // Highlight Vitally · cobertura cliente
     const VIT = {
-      enterprise: { task:'70%', taskSub:'16/23', meetrox:'26%', meetroxSub:'6/23', tm:'22%', tmSub:'5/23', inv:'30%', invSub:'7/23 invisíveis' },
-      commercial: { task:'55%', taskSub:'65/119', meetrox:'22%', meetroxSub:'26/119', tm:'18%', tmSub:'22/119', inv:'45%', invSub:'54/119 invisíveis' },
-      consolidado: { task:'57%', taskSub:'81/142', meetrox:'23%', meetroxSub:'32/142', tm:'19%', tmSub:'27/142', inv:'43%', invSub:'61/142 invisíveis' }
+      enterprise: { task:'75%', taskSub:'15/20', meetrox:'25%', meetroxSub:'5/20', tm:'20%', tmSub:'4/20', inv:'20%', invSub:'4/20 invisíveis' },
+      commercial: { task:'60%', taskSub:'62/104', meetrox:'23%', meetroxSub:'24/104', tm:'19%', tmSub:'20/104', inv:'37%', invSub:'38/104 invisíveis' },
+      consolidado: { task:'62%', taskSub:'77/124', meetrox:'23%', meetroxSub:'29/124', tm:'19%', tmSub:'24/124', inv:'34%', invSub:'42/124 invisíveis' }
     };
     const V = VIT[curSeg];
     if (V) { ['task','meetrox','tm','inv'].forEach(k => { const el = document.getElementById('vit-'+k); if (el) el.textContent = V[k]; const sub = document.getElementById('vit-'+k+'-sub'); if (sub) sub.textContent = V[k+'Sub']; }); }
-    $('exec-02-regua').innerHTML = `<div class="rank-h">Régua × executado por milestone<span class="rank-h-sub">mai/26 · ✓ Vitally task config REAL · 100% Growth (142/142) · só estágios ongoing</span></div>` +
+    $('exec-02-regua').innerHTML = `<div class="rank-h">Régua × executado por milestone<span class="rank-h-sub">mai/26 · ✓ Vitally task config REAL · 100% Growth (124/124) · só estágios ongoing</span></div>` +
       D.exec02_regua.map(r => {
         const pct = Math.min(100, Math.round(r.real/r.meta*100));
         const label = `${r.real} de ${r.meta}`;
@@ -1520,6 +1625,11 @@ function render(){
     setAcao('qual-02-acao', D.qual02_acao);
     $('qual-03-ofens-tbody').innerHTML = D.qual03_ofens.map(r =>
       `<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('');
+    if (D.qual04_rank) {
+      $('qual-04-rank-tbody').innerHTML = D.qual04_rank.map(r =>
+        `<tr><td style="text-align:center;font-size:14px">${r[0]}</td><td><strong>${r[1]}</strong></td><td>${r[2]}</td><td class="num">${r[3]}</td><td class="num"><strong>${r[4]}</strong></td><td class="num">${r[5]}</td><td class="num">${r[6]}</td><td class="num">${r[7]}</td><td class="num">${r[8]}</td></tr>`).join('');
+      setAcao('qual-04-acao', D.qual04_acao);
+    }
   }
 
   // Painel ④ Op × Performance
@@ -1620,6 +1730,18 @@ function render(){
     $('risco-04-churned-tbody').innerHTML = D.risco04_churned.length ? D.risco04_churned.map(r =>
       `<tr><td><strong>${r[0]}</strong></td><td>${r[1]}</td><td class="num">${r[2]}</td><td>${r[3]}</td><td>${r[4]}</td></tr>`).join('')
       : `<tr><td colspan="5" style="color:var(--gray-500);text-align:center;padding:14px;font-style:italic">Sem churns formalizados na esteira</td></tr>`;
+
+    // Esteira do CS · 3 buckets looking forward
+    const ab = $('esteira-aberto-tbody');
+    if (ab && D.esteira_aberto) ab.innerHTML = D.esteira_aberto.map(r =>
+      `<tr><td><strong>${r[0]}</strong></td><td>${r[1]}</td><td>${r[2]}</td><td class="num">${r[3]}</td><td>${r[4]}</td><td>${r[5]}</td><td>${r[6]}</td></tr>`).join('');
+    const rk = $('esteira-risco-tbody');
+    if (rk && D.esteira_risco) rk.innerHTML = D.esteira_risco.map(r =>
+      `<tr><td><strong>${r[0]}</strong></td><td>${r[1]}</td><td>${r[2]}</td><td class="num">${r[3]}</td><td>${r[4]}</td><td>${r[5]}</td><td>${r[6]}</td><td>${r[7]}</td></tr>`).join('');
+    const ex = $('esteira-expandir-tbody');
+    if (ex && D.esteira_expandir) ex.innerHTML = D.esteira_expandir.map(r =>
+      `<tr><td><strong>${r[0]}</strong></td><td>${r[1]}</td><td>${r[2]}</td><td class="num">${r[3]}</td><td class="num">${r[4]}</td><td>${r[5]}</td><td>${r[6]}</td><td>${r[7]}</td></tr>`).join('');
+    if (D.esteira_acao) setAcao('esteira-acao', D.esteira_acao);
   }
 
   // Painel ⑦ Plano (por esteira)
@@ -1672,6 +1794,5 @@ document.querySelectorAll('#seg-toggle button').forEach(b => {
 /* ===== INIT ===== */
 render();
 </script>
-
-
-</body></html>
+</body>
+</html>
