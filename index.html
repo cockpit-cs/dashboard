@@ -1222,22 +1222,22 @@ const DATA = {
     exec01_desc:'Visão agregada Ent + Com — para comparativo e leitura de macro. Bottom-up: olhar esteira antes de consolidado.',
     exec01_kpis: [
       { l:'Cobertura jornada', v:'62%', cls:'amber', s:'77/124 contas com task realizada em mai', bar:62, barColor:'var(--amber)' },
-      { l:'Tasks Vitally', v:'41%', cls:'red', s:'140/341 · Ent 73% (32/44) · Com 36% (108/297)', bar:41, barColor:'var(--maroon)' },
+      { l:'Tasks Vitally', v:'41%', cls:'red', s:'149/363 · Ent 64% (34/53) · Com 37% (115/310)', bar:41, barColor:'var(--maroon)' },
       { l:'Calls Meetrox link', v:'23%', cls:'amber', s:'32/142 · Ent 26% · Com 22%' },
       { l:'Nota Meetrox', v:'7,96', cls:'amber', s:'81 elegíveis · meta 8,0 · gap −0,04' },
       { l:'% calls <6', v:'14%', cls:'amber', s:'11/81 calls críticas' },
       { l:'No-Show / curtas', v:'11%', cls:'amber', s:'11 calls ≤5min ou ausência' }
     ],
-    exec01_acao: { type:'amber', text:'<strong>Ent executa 73% das tasks · Com só 36%.</strong> Pior gap: SP Com 12% (10/83) · QBR Com 0% (0/18). 42 invisíveis no total (34%) · Bruna concentra 75% dos invisíveis Ent (3 BUNZL).' },
+    exec01_acao: { type:'amber', text:'<strong>Ent executa 64% das tasks · Com só 37%.</strong> Pior gap: SP Com 13% (11/86) · QBR ambas esteiras 14% (Ent 1/7 · Com 3/21). 42 invisíveis no total (34%) · Bruna concentra 75% dos invisíveis Ent (3 BUNZL).' },
 
     exec02_regua: [
-      { l:'SE · Sales Engagement', meta:178, real:110, color:'var(--amber)', nota:'62% execução · Ent 19/23 (83%) · Com 91/155 (59%) · gap de 68 calls' },
-      { l:'SP · Sales Performance', meta:89, real:16, color:'var(--maroon)', nota:'🔴 SP gap crítico: Ent 6/6 (100%) · Com 10/83 (12%) · 73 não executadas no Com' },
-      { l:'QBR formal Vitally', meta:24, real:1, color:'var(--maroon)', nota:'🔴 4% QBR formal · Ent 1/6 (17%) · Com 0/18 (0%) — ofensor sistêmico Com' },
+      { l:'SE · Sales Engagement', meta:185, real:110, color:'var(--amber)', nota:'59% execução · Ent 19/27 (70%) · Com 91/158 (58%) · gap de 75 calls' },
+      { l:'SP · Sales Performance', meta:92, real:17, color:'var(--maroon)', nota:'🔴 SP gap crítico: Ent 6/6 (100%) · Com 11/86 (13%) · 75 não executadas no Com' },
+      { l:'QBR formal Vitally', meta:28, real:4, color:'var(--maroon)', nota:'🔴 14% QBR formal · Ent 1/7 (14%) · Com 3/21 (14%) — ofensor sistêmico ambas esteiras' },
       { l:'QA Sponsor', meta:43, real:7, color:'var(--maroon)', nota:'16% execução · Ent 5/8 (62%) · Com 2/35 (6%) — 33 pendentes no Com' },
       { l:'Fora de Jornada', meta:2, real:2, color:'var(--teal)', nota:'100% execução (1 Ent + 1 Com)' }
     ],
-    exec02_acao: { type:'red', text:'🔴 <strong>Gap operacional crítico (dados REAIS Vitally · 341 tasks Growth mai/26):</strong> <strong>Commercial executa 36%</strong> vs Enterprise 73%. <strong>Pior gap absoluto: SP Com (10/83 = 12%) e QBR Com (0/18 = 0%)</strong>. QA Sponsor Com idem 6%. Enterprise ok em SP (100%) e Sales Engagement (83%) — mas QBR só 17% (1/6). P0: destravar QBR e SP no Commercial. <a href="https://camilafontanellacortex.github.io/auditoriameetrox/" target="_blank" style="color:var(--maroon);text-decoration:underline">Auditoria Meetrox</a>.' },
+    exec02_acao: { type:'red', text:'🔴 <strong>Gap operacional crítico (dados REAIS Vitally · 363 tasks Growth mai/26):</strong> <strong>Commercial executa 37%</strong> vs Enterprise 64%. <strong>Pior gap absoluto: SP Com (11/86 = 13%) e QBR (4/28 = 14% nas duas esteiras)</strong>. QA Sponsor Com idem 6%. Enterprise ok em SP (100%) e SE (70%) — mas QBR também só 14% (1/7). P0: destravar QBR (ambas esteiras) e SP no Commercial. <a href="https://camilafontanellacortex.github.io/auditoriameetrox/" target="_blank" style="color:var(--maroon);text-decoration:underline">Auditoria Meetrox</a>.' },
 
     exec03_rank: [
       { n:'Samara Conrado', pct:92, real:11, meta:12, color:'var(--teal)' },
@@ -1256,7 +1256,7 @@ const DATA = {
     exec03_acao: { type:'amber', text:'<strong>Leitura:</strong> % de calls realizadas vs meta por CS na Sem 4 mai (18-26/mai). Acima de 90% = ok · entre 50-89% = atenção · abaixo de 50% = crítico.<br><strong>Acima da meta:</strong> Samara 92% (11/12). <strong>Atenção:</strong> Thiago 68% · Rafael 63% · Victor 50% · Gui 47%. <strong>Crítico:</strong> Macir 37% · Bruna 27%.<br><strong>Ação:</strong> 1:1 individual com Macir e Bruna essa semana — destravar volume de calls para junho.' },
 
     aberto01_kpis: [
-      { l:'Tasks não realizadas', v:'201', cls:'red', s:'59% das 341 Growth previstas' },
+      { l:'Tasks não realizadas', v:'214', cls:'red', s:'59% das 363 Growth previstas' },
       { l:'QBR Vitally pendente', v:'27', cls:'red', s:'22 com renovação em 90d' },
       { l:'QA Sponsor pendente', v:'10', cls:'amber', s:'8 em risco alto' },
       { l:'Contas acumulando gap', v:'17', cls:'red', s:'3+ flags · prioridade' }
