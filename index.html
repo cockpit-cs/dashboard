@@ -920,11 +920,11 @@ const DATA = {
     ],
 
     qual04_rank: [
-      ['🥇','Samara Conrado','Ent','2/4','9,69','28min','<span class="pill teal">100%</span>','0 / 2','<span class="pill teal">100% (6/6)</span>'],
-      ['🥈','Bruna Glezer','Ent','10/13','8,01','40min','<span class="pill amber">70%</span>','0 / 3','<span class="pill red">50% (6/12)</span>'],
-      ['🥉','Guilherme Vieira','Ent','14/14','7,78','38min','<span class="pill teal">93%</span>','0 / 0','<span class="pill amber">80% (4/5)</span>']
+      ['🥇','Samara Conrado','Ent','2/4','9,69','28min','<span class="pill teal">100%</span>','0 / 2','<span class="pill amber">75% (3/4)</span>'],
+      ['🥈','Bruna Glezer','Ent','10/13','8,01','40min','<span class="pill amber">70%</span>','0 / 3','<span class="pill amber">64% (7/11)</span>'],
+      ['🥉','Guilherme Vieira','Ent','14/14','7,78','38min','<span class="pill teal">93%</span>','0 / 0','<span class="pill teal">100% (5/5)</span>']
     ],
-    qual04_acao: { type:'teal', text:'<strong>Samara é referência</strong> · nota 9,69 e cobertura jornada 100% (6/6 contas). <strong>Bruna concentra os 2 problemas Ent</strong> · cobertura 50% (6 de 12 contas sem task realizada) + AS 5,0 puxa a nota. Coaching individual com foco em template de Agenda Estruturada.' },
+    qual04_acao: { type:'teal', text:'<strong>Gui é referência em cobertura</strong> · 100% (5/5). Samara 75% (XP invisível). <strong>Bruna concentra os 2 problemas Ent</strong> · cobertura 64% (3 BUNZL invisíveis em 11 contas) + AS 5,0 puxa a nota. Coaching individual com foco em template de Agenda Estruturada.' },
 
     opperf01_term: [
       ['SAP BRASIL','Bruna','🟡 Ruim','🟡 Ruim','0','Alinhado após SP Coutinho 21/05 · próximo passo: QBR formal'],
@@ -1105,12 +1105,12 @@ const DATA = {
     ],
 
     qual04_rank: [
-      ['🥇','Thiago Garcia','Com','15/19','8,54','47min','<span class="pill teal">87%</span>','0 / 4','<span class="pill red">45% (14/31)</span>'],
-      ['🥈','Victor Reis','Com','12/14','8,47','37min','<span class="pill amber">75%</span>','1 / 1','<span class="pill amber">67% (20/30)</span>'],
-      ['🥉','Macir Junior','Com','10/11','8,38','40min','<span class="pill amber">70%</span>','0 / 1','<span class="pill red">55% (16/29)</span>'],
-      ['4º','Rafael Ferreira','Com','18/22','6,90','37min','<span class="pill red">44%</span>','2 / 2','<span class="pill red">52% (15/29)</span>']
+      ['🥇','Thiago Garcia','Com','15/19','8,54','47min','<span class="pill teal">87%</span>','0 / 4','<span class="pill amber">54% (14/26)</span>'],
+      ['🥈','Victor Reis','Com','12/14','8,47','37min','<span class="pill amber">75%</span>','1 / 1','<span class="pill red">46% (11/24)</span>'],
+      ['🥉','Macir Junior','Com','10/11','8,38','40min','<span class="pill amber">70%</span>','0 / 1','<span class="pill amber">70% (19/27)</span>'],
+      ['4º','Rafael Ferreira','Com','18/22','6,90','37min','<span class="pill red">44%</span>','2 / 2','<span class="pill amber">67% (18/27)</span>']
     ],
-    qual04_acao: { type:'red', text:'<strong>Rafael 6,90 + 44% calls ≥7</strong> é o gap individual mais grave do time Com. <strong>Cobertura jornada 45-55%</strong> em todas as carteiras Commercial — Thiago tem boa qualidade mas só toca 14 de 31 contas. Prioridade: 1:1 Rafael (qualidade) + sprint de cobertura nas 4 carteiras.' },
+    qual04_acao: { type:'red', text:'<strong>Rafael 6,90 + 44% calls ≥7</strong> é o gap individual mais grave do time Com. <strong>Cobertura jornada 46-70%</strong> em todas as carteiras Commercial — Victor é o pior (46% · 11/24 contas tocadas). Thiago tem boa qualidade mas só toca 14 de 26 contas. Prioridade: 1:1 Rafael (qualidade) + sprint de cobertura Victor e Thiago.' },
 
     opperf01_term: [
       ['PULSUS','Victor','🟡 Ruim','🔴 Péssimo','−1','CS otimista · IA detecta tensão'],
@@ -1222,22 +1222,22 @@ const DATA = {
     exec01_desc:'Visão agregada Ent + Com — para comparativo e leitura de macro. Bottom-up: olhar esteira antes de consolidado.',
     exec01_kpis: [
       { l:'Cobertura jornada', v:'62%', cls:'amber', s:'77/124 contas com task realizada em mai', bar:62, barColor:'var(--amber)' },
-      { l:'Tasks Vitally', v:'46%', cls:'amber', s:'208/451 · Ent 83% · Com 41%', bar:46, barColor:'var(--amber)' },
+      { l:'Tasks Vitally', v:'41%', cls:'red', s:'140/341 · Ent 73% (32/44) · Com 36% (108/297)', bar:41, barColor:'var(--maroon)' },
       { l:'Calls Meetrox link', v:'23%', cls:'amber', s:'32/142 · Ent 26% · Com 22%' },
       { l:'Nota Meetrox', v:'7,96', cls:'amber', s:'81 elegíveis · meta 8,0 · gap −0,04' },
       { l:'% calls <6', v:'14%', cls:'amber', s:'11/81 calls críticas' },
       { l:'No-Show / curtas', v:'11%', cls:'amber', s:'11 calls ≤5min ou ausência' }
     ],
-    exec01_acao: { type:'amber', text:'<strong>Ent executa bem em tasks mas QBR concentrado.</strong> Com com 38% tasks e 4% QBR — risco descoberto crítico. 42 invisíveis no total (34%) · Bruna concentra 75% dos invisíveis Ent (3 BUNZL).' },
+    exec01_acao: { type:'amber', text:'<strong>Ent executa 73% das tasks · Com só 36%.</strong> Pior gap: SP Com 12% (10/83) · QBR Com 0% (0/18). 42 invisíveis no total (34%) · Bruna concentra 75% dos invisíveis Ent (3 BUNZL).' },
 
     exec02_regua: [
-      { l:'SE · Sales Engagement', meta:193, real:102, color:'var(--amber)', nota:'✓ Vitally task config REAL (100% Growth · 142/142) · 53% execução · gap de 91 calls' },
-      { l:'SP · Sales Performance', meta:96, real:11, color:'var(--maroon)', nota:'🔴 SP gap crítico: 85 calls não executadas (11 de 96) · 11%' },
-      { l:'QBR formal Vitally', meta:9, real:0, color:'var(--maroon)', nota:'🔴 0% QBR formal · ofensor sistêmico em ambas esteiras' },
-      { l:'QA Sponsor', meta:5, real:0, color:'var(--maroon)', nota:'5 tasks pendentes Vitally · 0% execução' },
-      { l:'Recorrência / Monthly Review', meta:1, real:1, color:'var(--teal)', nota:'Apenas 1 tag Vitally (Gui · Monthly Review) · rotina informal via MeetRox' }
+      { l:'SE · Sales Engagement', meta:178, real:110, color:'var(--amber)', nota:'62% execução · Ent 19/23 (83%) · Com 91/155 (59%) · gap de 68 calls' },
+      { l:'SP · Sales Performance', meta:89, real:16, color:'var(--maroon)', nota:'🔴 SP gap crítico: Ent 6/6 (100%) · Com 10/83 (12%) · 73 não executadas no Com' },
+      { l:'QBR formal Vitally', meta:24, real:1, color:'var(--maroon)', nota:'🔴 4% QBR formal · Ent 1/6 (17%) · Com 0/18 (0%) — ofensor sistêmico Com' },
+      { l:'QA Sponsor', meta:43, real:7, color:'var(--maroon)', nota:'16% execução · Ent 5/8 (62%) · Com 2/35 (6%) — 33 pendentes no Com' },
+      { l:'Fora de Jornada', meta:2, real:2, color:'var(--teal)', nota:'100% execução (1 Ent + 1 Com)' }
     ],
-    exec02_acao: { type:'red', text:'🔴 <strong>Gap operacional crítico (dados REAIS · 100% Growth · só estágios ongoing):</strong> Vitally task config mostra <strong>96 SP previstas · só 11 executadas (11%)</strong> · <strong>9 QBR previstas · 0 executadas</strong> · <strong>5 QA Sponsor previstas · 0 executadas</strong>. MeetRox confirma execução real foi maior em Recorrências/Agenda de Rotina informais. P0: alinhar config Vitally à execução real OU executar régua oficial. <a href="https://camilafontanellacortex.github.io/auditoriameetrox/" target="_blank" style="color:var(--maroon);text-decoration:underline">Auditoria Meetrox</a>.' },
+    exec02_acao: { type:'red', text:'🔴 <strong>Gap operacional crítico (dados REAIS Vitally · 341 tasks Growth mai/26):</strong> <strong>Commercial executa 36%</strong> vs Enterprise 73%. <strong>Pior gap absoluto: SP Com (10/83 = 12%) e QBR Com (0/18 = 0%)</strong>. QA Sponsor Com idem 6%. Enterprise ok em SP (100%) e Sales Engagement (83%) — mas QBR só 17% (1/6). P0: destravar QBR e SP no Commercial. <a href="https://camilafontanellacortex.github.io/auditoriameetrox/" target="_blank" style="color:var(--maroon);text-decoration:underline">Auditoria Meetrox</a>.' },
 
     exec03_rank: [
       { n:'Samara Conrado', pct:92, real:11, meta:12, color:'var(--teal)' },
@@ -1253,10 +1253,10 @@ const DATA = {
       'Rafael lidera volume Com (17) mas nota baixa', 'Bruna/Macir/Thiago/Rafael acumulam invisíveis (~40% cada)',
       'Bottom-up: olhar esteira antes do consolidado'
     ]},
-    exec03_acao: { type:'amber', text:'<strong>3 referências:</strong> Samara (Ent 92%) · Thiago (Com 68%) · Rafael (Com 63% volume). 4 abaixo de 50% — atenção individual.' },
+    exec03_acao: { type:'amber', text:'<strong>Leitura:</strong> % de calls realizadas vs meta por CS na Sem 4 mai (18-26/mai). Acima de 90% = ok · entre 50-89% = atenção · abaixo de 50% = crítico.<br><strong>Acima da meta:</strong> Samara 92% (11/12). <strong>Atenção:</strong> Thiago 68% · Rafael 63% · Victor 50% · Gui 47%. <strong>Crítico:</strong> Macir 37% · Bruna 27%.<br><strong>Ação:</strong> 1:1 individual com Macir e Bruna essa semana — destravar volume de calls para junho.' },
 
     aberto01_kpis: [
-      { l:'Tasks não realizadas', v:'243', cls:'red', s:'54% das 451 previstas' },
+      { l:'Tasks não realizadas', v:'201', cls:'red', s:'59% das 341 Growth previstas' },
       { l:'QBR Vitally pendente', v:'27', cls:'red', s:'22 com renovação em 90d' },
       { l:'QA Sponsor pendente', v:'10', cls:'amber', s:'8 em risco alto' },
       { l:'Contas acumulando gap', v:'17', cls:'red', s:'3+ flags · prioridade' }
@@ -1310,15 +1310,15 @@ const DATA = {
     ],
 
     qual04_rank: [
-      ['🥇','Samara Conrado','Ent','2/4','9,69','28min','<span class="pill teal">100%</span>','0 / 2','<span class="pill teal">100% (6/6)</span>'],
-      ['🥈','Thiago Garcia','Com','15/19','8,54','47min','<span class="pill teal">87%</span>','0 / 4','<span class="pill red">45% (14/31)</span>'],
-      ['🥉','Victor Reis','Com','12/14','8,47','37min','<span class="pill amber">75%</span>','1 / 1','<span class="pill amber">67% (20/30)</span>'],
-      ['4º','Macir Junior','Com','10/11','8,38','40min','<span class="pill amber">70%</span>','0 / 1','<span class="pill red">55% (16/29)</span>'],
-      ['5º','Bruna Glezer','Ent','10/13','8,01','40min','<span class="pill amber">70%</span>','0 / 3','<span class="pill red">50% (6/12)</span>'],
-      ['6º','Guilherme Vieira','Ent','14/14','7,78','38min','<span class="pill teal">93%</span>','0 / 0','<span class="pill amber">80% (4/5)</span>'],
-      ['7º','Rafael Ferreira','Com','18/22','6,90','37min','<span class="pill red">44%</span>','2 / 2','<span class="pill red">52% (15/29)</span>']
+      ['🥇','Samara Conrado','Ent','2/4','9,69','28min','<span class="pill teal">100%</span>','0 / 2','<span class="pill amber">75% (3/4)</span>'],
+      ['🥈','Thiago Garcia','Com','15/19','8,54','47min','<span class="pill teal">87%</span>','0 / 4','<span class="pill amber">54% (14/26)</span>'],
+      ['🥉','Victor Reis','Com','12/14','8,47','37min','<span class="pill amber">75%</span>','1 / 1','<span class="pill red">46% (11/24)</span>'],
+      ['4º','Macir Junior','Com','10/11','8,38','40min','<span class="pill amber">70%</span>','0 / 1','<span class="pill amber">70% (19/27)</span>'],
+      ['5º','Bruna Glezer','Ent','10/13','8,01','40min','<span class="pill amber">70%</span>','0 / 3','<span class="pill amber">64% (7/11)</span>'],
+      ['6º','Guilherme Vieira','Ent','14/14','7,78','38min','<span class="pill teal">93%</span>','0 / 0','<span class="pill teal">100% (5/5)</span>'],
+      ['7º','Rafael Ferreira','Com','18/22','6,90','37min','<span class="pill red">44%</span>','2 / 2','<span class="pill amber">67% (18/27)</span>']
     ],
-    qual04_acao: { type:'amber', text:'<strong>Polarização do time:</strong> Samara é referência (9,69 · cobertura 100%) e Rafael é o gap (6,90 · 44% calls ≥7 · 2 no-shows). Em qualidade, AS é sistêmico (6/7 CSMs). Em cobertura jornada, só Samara e Guilherme acima de 80% — carteiras de Bruna, Thiago, Macir e Rafael abaixo de 55%.' },
+    qual04_acao: { type:'amber', text:'<strong>Polarização do time:</strong> Samara é referência em qualidade (9,69) e Gui em cobertura (100% · 5/5). Rafael é o gap de qualidade (6,90 · 44% calls ≥7 · 2 no-shows). Em AS é sistêmico (6/7 CSMs). Em cobertura jornada, só Gui acima de 90% — Victor é o pior (46%) · Thiago 54%. 4 carteiras abaixo de 70%.' },
 
     opperf01_term: [
       ['SAP BRASIL','Bruna','🟡 Ruim','🟡 Ruim','0','Alinhado após SP Coutinho 21/05 · próximo passo: QBR formal'],
